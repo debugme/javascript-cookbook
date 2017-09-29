@@ -14,6 +14,7 @@
 * [How can I destructure an object?](how-can-i-restructure-an-object.md)
 * [How can I pretty-print an object?](how-can-i-pretty-print-an-object.md)
 * [How can I conditional add a key-value into an object?](how-can-i-conditional-add-a-key-value-into-an-object.md)
+* [How can I build an object whose key names are determined by variables?](how-can-i-build-an-object-whose-key-names-are-determined-by-variables.md)
 
 ## String Recipes
 
