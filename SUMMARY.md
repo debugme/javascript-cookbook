@@ -19,3 +19,7 @@
 
 * [How can I parse a template string into its constant and variable parts?](string-recipes/how-can-i-parse-a-template-string-into-its-constant-and-variable-parts.md)
 
+## Function Recipes
+
+* [How can I simplify argument validation in a function?](how-can-i-simplify-argument-validation-in-a-function.md)
+
