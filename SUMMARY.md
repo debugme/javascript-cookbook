@@ -1,4 +1,15 @@
 # Summary
 
-* [What is XYZ?](first-question.md)
-* [How can I do X?](second-question.md)
+## Welcome
+
+* [Introduction](README.md)
+
+## Array Recipes
+
+* [How can I filter out falsey values?](first-question.md)
+
+## Object Recipes
+
+* [How can I clone an object?](second-question.md)
+* [How can I destructure an object?](how-can-i-restructure-an-object.md)
+
