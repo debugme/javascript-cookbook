@@ -12,4 +12,5 @@
 
 * [How can I clone an object?](second-question.md)
 * [How can I destructure an object?](how-can-i-restructure-an-object.md)
+* [How can I pretty-print an object?](how-can-i-pretty-print-an-object.md)
 
