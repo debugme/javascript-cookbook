@@ -18,6 +18,11 @@ console.log(`The value of c is ${c}`)
 // Pull out a nested key-value pair
 const { d: { e } } = data
 console.log(`The value of e is ${e}`)
+
+// Pull out a desired subset of an object
+const { a, ...subset } = data
+console.log('The desired subset is ', subset)
+
 ```
 
 
