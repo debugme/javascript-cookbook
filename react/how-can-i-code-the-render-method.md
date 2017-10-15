@@ -2,37 +2,42 @@
 // Approach 1 - Imperative
 const NameHolder = (props) => {
     const { firstName, lastName, title } = props
-    return (
-        <p>{ firstName && lastName && title && <FullName {...{firstName, lastName, title }} > }</p>
-    )
+    return ({ firstName && lastName && title && <FullName {...{firstName, lastName, title }}/> })
 }
 
+const FullName = (props) => {
+    const { firstName, lastName, title } = props    
+    // Elided code...
+}
+```
+
+```jsx
 // Approach 2 - Imperative + Declarative
 const NameHolder = (props) => {
     const { firstName, lastName, title } = props
     const isVisible = (firstName && lastName && title)
-    return (
-        <p>{ firstName && lastName && title && <FullName {...{firstName, lastName, title }} > }</p>
-    )
+    return ({ isVisible && <FullName {...{firstName, lastName, title }}/> })
 }
 
-// Approach 2 - Declarative
+const FullName = (props) => {
+    const { firstName, lastName, title } = props    
+    // Elided code...
+}
+```
+
+```jsx
+// Approach 3 - Declarative
 const NameHolder = (props) => {
     const { firstName, lastName, title } = props
     const isVisible = (firstName && lastName && title)
-    return (
-        <p><FullName {...{firstName, lastName, title, isVisible }} /></p>
-    )
+    return (<FullName {...{firstName, lastName, title, isVisible }}/>)
 }
 
-
-
-
-
-
-
-
-
+const FullName = (props) => {
+    const { firstName, lastName, title, isVisible } = props    
+    if (!isVisible) return null
+    // Elided code...
+}
 ```
 
 
