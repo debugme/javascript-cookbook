@@ -26,3 +26,7 @@
 * [How to find out where your function is being called from](how-to-find-out-where-your-function-is-being-called-from.md)
 * [How can I simplify argument validation in a function?](how-can-i-simplify-argument-validation-in-a-function.md)
 
+## React
+
+* [How can I pass in props?](react/how-can-i-pass-in-props.md)
+
