@@ -1,5 +1,5 @@
 ```jsx
-// Approach 1 - Imperative
+// Approach 1 - Complex logic for conditional rendering in-situ with JSX fragment
 const NameHolder = (props) => {
     const { firstName, lastName, title } = props
     return ({ firstName && lastName && title && <FullName {...{firstName, lastName, title }}/> })
@@ -12,7 +12,7 @@ const FullName = (props) => {
 ```
 
 ```jsx
-// Approach 2 - Imperative + Declarative
+// Approach 2 - Simple logic for conditional rendering in-situ with JSX fragment
 const NameHolder = (props) => {
     const { firstName, lastName, title } = props
     const isVisible = (firstName && lastName && title)
@@ -26,7 +26,7 @@ const FullName = (props) => {
 ```
 
 ```jsx
-// Approach 3 - Declarative
+// Approach 3 - Logic for conditional rendering passed into JSX fragment
 const NameHolder = (props) => {
     const { firstName, lastName, title } = props
     const isVisible = (firstName && lastName && title)
