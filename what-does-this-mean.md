@@ -16,10 +16,6 @@ this.console;                                      // (1)
 //     In a browser the global object is the window object.
 //     So this is the same as window.console;
 //=======================================================
-
-
-
-
 ```
 
 ```js
@@ -40,9 +36,6 @@ console.log("Area of square is " + square.getArea());
 //     of "this" inside that function, is the object that
 //      the function is called on i.e. square.
 //=======================================================
-
-
-
 ```
 
 ```js
