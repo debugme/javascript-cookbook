@@ -4,9 +4,9 @@ async function f () {
   try {
     const a = await Promise.resolve(1)
     const b = await Promise.resolve(2)
-    console.log(`[case8] pass: ${a + b}`)
+    console.log(`[case1] pass: ${a + b}`)
   } catch (error) {
-    console.log(`[case8] fail: ${error.toString()}`)
+    console.log(`[case1] fail: ${error.toString()}`)
   }
 
 }
@@ -18,9 +18,9 @@ async function g () {
   try {
     const a = await Promise.resolve(1)
     const b = await Promise.reject(2)
-    console.log(`[case9] pass: ${a + b}`)
+    console.log(`[case2] pass: ${a + b}`)
   } catch (error) {
-    console.log(`[case9] fail: ${error.toString()}`)
+    console.log(`[case2] fail: ${error.toString()}`)
   }
 
 }
