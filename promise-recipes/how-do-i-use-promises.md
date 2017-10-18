@@ -2,7 +2,7 @@
 // Case 1: If a promise is resolved the THEN block is run
 Promise.resolve(1)
   .then(value => console.log(`[case1] pass: ${value}`))
-  .catch(error => console.log(`[case2] fail: ${error}`))
+  .catch(error => console.log(`[case1] fail: ${error}`))
 
 // Case 2: If a promise is rejected the CATCH block is run
 Promise.reject(1)
