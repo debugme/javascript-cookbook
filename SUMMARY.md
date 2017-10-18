@@ -27,8 +27,12 @@
 * [How to find out where your function is being called from](how-to-find-out-where-your-function-is-being-called-from.md)
 * [How can I simplify argument validation in a function?](how-can-i-simplify-argument-validation-in-a-function.md)
 
-## React
+## React Recipes
 
 * [How can I pass in props?](react/how-can-i-pass-in-props.md)
 * [How can I conditionally render JSX?](react/how-can-i-code-the-render-method.md)
+
+## Promise Recipes
+
+* [How do I use Promises?](promise-recipes/how-do-i-use-promises.md)
 
