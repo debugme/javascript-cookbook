@@ -26,6 +26,7 @@
 
 * [How to find out where your function is being called from](how-to-find-out-where-your-function-is-being-called-from.md)
 * [How can I simplify argument validation in a function?](how-can-i-simplify-argument-validation-in-a-function.md)
+* [How would I handle errors?](how-would-i-handle-errors.md)
 
 ## React Recipes
 
