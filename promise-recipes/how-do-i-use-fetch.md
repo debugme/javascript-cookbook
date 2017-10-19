@@ -10,12 +10,16 @@ const onValidate = (response) => {
 const onSuccess = (response) => response.json()
 
 const onFailure = (error) => console.log(`error: ${error}`)
+```
 
+```js
 fetch(url)
     .then(onValidate)
     .then(onSuccess)
     .catch(onFailure)
 ```
+
+
 
 
 
