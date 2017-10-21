@@ -8,7 +8,7 @@ const Home = (props) => <h1>Home</h1>
 const App = () => (
   <BrowserRouter>
     <div>
-      <Route strict path='/' component={Home} />
+      <Route strict path='/home' component={Home} />
     </div>
   </BrowserRouter>
 )
@@ -18,7 +18,7 @@ export default App
 
 ```js
 // The above route will only match the following path
-// http://localhost:3000/
+// http://localhost:3000/home
 ```
 
 
