@@ -27,6 +27,7 @@ export default App
 ```
 
 ```js
+// Notes: 
 // When you use Switch, only a single route will be processed
 ```
 
