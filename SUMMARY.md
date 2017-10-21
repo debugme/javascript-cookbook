@@ -29,16 +29,16 @@
 * [How can I simplify argument validation in a function?](how-can-i-simplify-argument-validation-in-a-function.md)
 * [How would I handle errors?](how-would-i-handle-errors.md)
 
-## React Recipes
-
-* [How can I pass in props?](react/how-can-i-pass-in-props.md)
-* [How can I conditionally render JSX?](react/how-can-i-code-the-render-method.md)
-
 ## Asynchronous Recipes
 
 * [How do I use fetch?](promise-recipes/how-do-i-use-fetch.md)
 * [How do I use Promises?](promise-recipes/how-do-i-use-promises.md)
 * [How do I use async and await?](promise-recipes/how-do-i-use-async-and-await.md)
+
+## React Recipes
+
+* [How can I pass in props?](react/how-can-i-pass-in-props.md)
+* [How can I conditionally render JSX?](react/how-can-i-code-the-render-method.md)
 
 ## React Router Recipes
 
@@ -46,4 +46,5 @@
 * [What the different types of routes that I can create?](react-router-recipes/how-do-i-create-a-basic-route.md)
 * [How can I navigate between different types of routes?](react-router-recipes/how-can-i-navigate-between-different-types-of-routes.md)
 * [How can I style the link for the route that is currently active?](react-router-recipes/how-can-i-style-the-link-for-the-route-that-is-currently-active.md)
+* How can I pass parameters to my routes?
 
