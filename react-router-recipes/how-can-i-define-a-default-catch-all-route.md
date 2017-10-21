@@ -24,7 +24,10 @@ const App = () => (
 )
 
 export default App
+```
 
+```js
+// When you use Switch, only a single route will be processed
 ```
 
 
