@@ -18,7 +18,9 @@ const contact = (props) => {
   return <h1>Contact</h1>
 }
 
-const location = (props) => props.match && <h1>Location</h1>
+const location = (props) => {
+  return props.match && <h1>Location</h1>
+}
 
 const App = () => (
   <BrowserRouter>
@@ -33,8 +35,6 @@ const App = () => (
 
 export default App
 ```
-
-
 
 
 
