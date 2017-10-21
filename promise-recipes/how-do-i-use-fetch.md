@@ -3,13 +3,13 @@ const url = 'https://swapi.co/api/people/5'
 
 const onValidate = (response) => {
     if (response.ok) 
-        return response
+        return response.json()
     throw new Error(response.status)
 }
 
-const onSuccess = (response) => response.json()
+const onSuccess = (json) => console.log(`success: ${JSON.stringify(json)}`)
 
-const onFailure = (error) => console.log(`error: ${error}`)
+const onFailure = (error) => console.error(`error: ${error}`)
 ```
 
 ```js
@@ -18,8 +18,6 @@ fetch(url)
     .then(onSuccess)
     .catch(onFailure)
 ```
-
-
 
 
 
