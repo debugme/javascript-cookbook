@@ -1,5 +1,5 @@
 ```js
-// How to conditionally add a key-value pair into an object (Approach 1)
+// Approach1: How to conditionally add a key-value pair into an object
 const a = {}
 const x = 'happy'
 const y = undefined
@@ -11,12 +11,10 @@ if (y) {
 }
 console.log('The value of a is ', a)
 
-// How to conditionally add a key-value pair into an object (Approach 2)
-let b = {}
+// Approach2: How to conditionally add a key-value pair into an object
 const p = 'happy'
 const q = undefined
-b = { ...( p ? { p } : { } )}
-b = { ...( q ? { q } : { } )}
+const b = { ...( p ? { p } : { } ), ...( q ? { q } : { } )}
 console.log('The value of b is ', b)
 ```
 
