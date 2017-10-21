@@ -14,7 +14,7 @@ this.console;                                      // (1)
 //=======================================================
 // (1) Outside of a function, "this" means the global object.
 //     In a browser the global object is the window object.
-//     So this is the same as window.console;
+//     So the code above is the same as window.console;
 //=======================================================
 ```
 
