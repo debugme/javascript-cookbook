@@ -1,5 +1,5 @@
 ```jsx
-// Approach 1 - Complex logic for conditional rendering in-situ with JSX fragment
+// Approach1
 const FullName = (props) => {
     const { firstName, lastName, title } = props    
     // Elided code...
@@ -7,13 +7,13 @@ const FullName = (props) => {
 
 const NameHolder = (props) => {
     const { firstName, lastName, title } = props
-    // High Complexity
+    // High Complexity (Imperative Code)
     return ({ firstName && lastName && title && <FullName {...{firstName, lastName, title }}/> })
 }
 ```
 
 ```jsx
-// Approach 2 - Simple logic for conditional rendering in-situ with JSX fragment
+// Approach2
 const FullName = (props) => {
     const { firstName, lastName, title } = props    
     // Elided code...
@@ -22,13 +22,13 @@ const FullName = (props) => {
 const NameHolder = (props) => {
     const { firstName, lastName, title } = props
     const isVisible = (firstName && lastName && title)
-    // Medium Complexity
+    // Medium Complexity (Hybrid Imperative + Declarative)
     return ({ isVisible && <FullName {...{firstName, lastName, title }}/> })
 }
 ```
 
 ```jsx
-// Approach 3 - Logic for conditional rendering passed into JSX fragment
+// Approach3
 const FullName = (props) => {
     const { firstName, lastName, title, isVisible } = props    
     if (!isVisible) return null
@@ -38,7 +38,7 @@ const FullName = (props) => {
 const NameHolder = (props) => {
     const { firstName, lastName, title } = props
     const isVisible = (firstName && lastName && title)
-    // Low Complexity
+    // Low Complexity (Declarative Code)
     return (<FullName {...{firstName, lastName, title, isVisible }}/>)
 }
 ```
