@@ -39,3 +39,7 @@
 * [How do I use Promises?](promise-recipes/how-do-i-use-promises.md)
 * [How do I use async and await?](promise-recipes/how-do-i-use-async-and-await.md)
 
+## React Router Recipes
+
+* [How do I install react router 4 as an application dependency](react-router-recipes/how-do-i-install-react-router-4-as-an-application-dependency.md)
+
