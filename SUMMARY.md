@@ -44,5 +44,5 @@
 * [How do I install react router 4 as an application dependency](react-router-recipes/how-do-i-install-react-router-4-as-an-application-dependency.md)
 * [How do I create a basic route?](react-router-recipes/how-do-i-create-a-basic-route.md)
 * [How do I create an exact route?](react-router-recipes/how-do-i-create-an-exact-route.md)
-* How do I create a strict route?
+* [How do I create a strict route?](react-router-recipes/how-do-i-create-a-strict-route.md)
 
