@@ -43,4 +43,5 @@
 
 * [How do I install react router 4 as an application dependency](react-router-recipes/how-do-i-install-react-router-4-as-an-application-dependency.md)
 * [What the different types of routes that I can create?](react-router-recipes/how-do-i-create-a-basic-route.md)
+* [How can I navigate between different types of routes?](react-router-recipes/how-can-i-navigate-between-different-types-of-routes.md)
 
