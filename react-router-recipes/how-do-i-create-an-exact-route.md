@@ -16,5 +16,11 @@ const App = () => (
 export default App
 ```
 
+```js
+// The above route will only match the following paths
+// http://localhost:3000
+// http://localhost:3000/
+```
+
 
 
