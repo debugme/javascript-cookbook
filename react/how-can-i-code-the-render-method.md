@@ -7,7 +7,7 @@ const FullName = (props) => {
 
 const NameHolder = (props) => {
     const { firstName, lastName, title } = props
-    // High Complexity (Imperative Code)
+    // High Complexity (Imperative Style)
     return ({ firstName && lastName && title && <FullName {...{firstName, lastName, title }}/> })
 }
 ```
@@ -22,7 +22,7 @@ const FullName = (props) => {
 const NameHolder = (props) => {
     const { firstName, lastName, title } = props
     const isVisible = (firstName && lastName && title)
-    // Medium Complexity (Hybrid Imperative + Declarative)
+    // Medium Complexity (Hybrid Style)
     return ({ isVisible && <FullName {...{firstName, lastName, title }}/> })
 }
 ```
@@ -38,7 +38,7 @@ const FullName = (props) => {
 const NameHolder = (props) => {
     const { firstName, lastName, title } = props
     const isVisible = (firstName && lastName && title)
-    // Low Complexity (Declarative Code)
+    // Low Complexity (Declarative Style)
     return (<FullName {...{firstName, lastName, title, isVisible }}/>)
 }
 ```
