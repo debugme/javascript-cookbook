@@ -19,7 +19,7 @@ const App = () => (
       <Links />
       <Route exact path='/' render={() => <h1>Home</h1>} />
       <Route path='/new/:value' render={({ match }) => <h1>{match.params.value}</h1>} />
-      <Route path='/old/:value' render={({match}) => <Redirect to={`/new/${match.params.value}`} />} />
+      <Route path='/old/:value' render={({ match }) => <Redirect to={`/new/${match.params.value}`} />} />
       <Route path='/protected' render={() => (
         loggedIn ? <h1>Welcome to protected page</h1> : <Redirect to='/new/Login' />
       )} />
@@ -28,8 +28,6 @@ const App = () => (
 )
 
 export default App
-
-
 ```
 
 ```js
