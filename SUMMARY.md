@@ -53,4 +53,5 @@
 * [How can I render multiple components for a single route?](react-router-recipes/how-can-i-render-multiple-components-for-a-route.md)
 * [How can I create nested routes?](react-router-recipes/how-can-i-create-nested-routes.md)
 * [How can I redirect from one route to another route?](react-router-recipes/how-can-i-redirect-from-one-route-to-another-route.md)
+* [How can I intercept transitioning from one route to another route?](react-router-recipes/how-can-i-intercept-transitioning-from-one-route-to-another-route.md)
 
