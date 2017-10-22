@@ -50,5 +50,5 @@
 * [How can I match routes by making sure parameters match a specific format?](react-router-recipes/how-can-i-match-routes-by-making-sure-parameters-match-a-specific-format.md)
 * [How can I parse query parameters from a route?](react-router-recipes/how-can-i-parse-query-parameters-from-a-route.md)
 * [How can I define a default catch-all route?](react-router-recipes/how-can-i-define-a-default-catch-all-route.md)
-* [How can I render multiple components for a route?](react-router-recipes/how-can-i-render-multiple-components-for-a-route.md)
+* [How can I render multiple components for a single route?](react-router-recipes/how-can-i-render-multiple-components-for-a-route.md)
 
