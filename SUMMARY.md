@@ -35,6 +35,7 @@
 * [How do I use Promises?](promise-recipes/how-do-i-use-promises.md)
 * [How do I use async and await?](promise-recipes/how-do-i-use-async-and-await.md)
 * [How do I use jQuery to make async calls?](promise-recipes/how-do-i-use-jquery-to-make-async-calls.md)
+* [How can I use Axios to make async calls?](promise-recipes/how-can-i-use-axios-to-make-async-calls.md)
 
 ## React Recipes
 
