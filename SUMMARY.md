@@ -34,6 +34,7 @@
 * [How do I use fetch?](promise-recipes/how-do-i-use-fetch.md)
 * [How do I use Promises?](promise-recipes/how-do-i-use-promises.md)
 * [How do I use async and await?](promise-recipes/how-do-i-use-async-and-await.md)
+* [How do I use jQuery to make async calls?](promise-recipes/how-do-i-use-jquery-to-make-async-calls.md)
 
 ## React Recipes
 
