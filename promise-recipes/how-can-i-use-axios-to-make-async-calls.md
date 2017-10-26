@@ -9,6 +9,10 @@ const onFailure = (error) => {
   return console.log(`Error in another place ${error.message}`)
 }
 
+
+```
+
+```js
 axios.get(url)
   .then((response) => console.log(response.data))
   .catch((error) => console.log(error))
