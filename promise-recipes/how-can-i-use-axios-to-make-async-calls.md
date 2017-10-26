@@ -1,6 +1,8 @@
 ```js
 const url = 'http://random.cat/meow'
+
 const onSuccess = (response) => console.log(response.data)
+
 const onFailure = (error) => {
   if (error.response)
     return console.log(`Error in response ${error.response.status}`)
@@ -8,8 +10,6 @@ const onFailure = (error) => {
     return consolee.log('Error in request ${url}')
   return console.log(`Error in another place ${error.message}`)
 }
-
-
 ```
 
 ```js
