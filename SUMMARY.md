@@ -56,3 +56,7 @@
 * [How can I redirect from one route to another route?](react-router-recipes/how-can-i-redirect-from-one-route-to-another-route.md)
 * [How can I intercept transitioning from one route to another route?](react-router-recipes/how-can-i-intercept-transitioning-from-one-route-to-another-route.md)
 
+## RxJS Recipes
+
+* [How can I create an Observable from different things?](rxjs-recipes/how-can-i-create-an-observable-from-different-things.md)
+
