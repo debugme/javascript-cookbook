@@ -1,7 +1,9 @@
 ```js
 const url = 'http://random.cat/meow'
 
-const onSuccess = (response) => console.log(response.data)
+const onSuccess = (response) => {
+  return console.log(response.data)
+}
 
 const onFailure = (error) => {
   if (error.response)
