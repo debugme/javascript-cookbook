@@ -1,7 +1,7 @@
 ```js
 const url = 'http://random.cat/meow'
 axios.get(url)
-  .then((data) => console.log(data))
+  .then((response) => console.log(response.data))
   .catch((error) => console.log(error))
 ```
 
