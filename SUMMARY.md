@@ -60,4 +60,5 @@
 ## RxJS Recipes
 
 * [How can I create an Observable from different things?](rxjs-recipes/how-can-i-create-an-observable-from-different-things.md)
+* [How can I subscribe to a series of numbers?](rxjs-recipes/how-can-i-subscribe-to-a-series-of-numbers.md)
 
