@@ -1,8 +1,4 @@
 ```js
-// How can I subscribe to an array of numbers?
-Rx.Observable.from([1, 2, 3, 4, 5])
-  .subscribe(value => console.log(value))
-
 // How can I transform an array of numbers?
 Rx.Observable.from([1, 'asad', 3, null, 5, {}, 7])  
   .map(value => parseInt(value, 10))
