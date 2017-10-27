@@ -1,8 +1,13 @@
 ```js
-Rx.Observable.fromEvent(document.querySelector('#buttonStuff'), 'click')
+const eventFrom = document.querySelector('#buttonStuff')
+const eventType = 'click'
+const clickStream = Rx.Observable.fromEvent(eventFrom, eventType)
+
+clickStream
   .filter(event => event.detail > 1)
   .debounceTime(500)
-  .subscribe(doubleClick => console.log(new Date().getTime()))
+  .map(doubleClick => new Date().getTime())
+  .subscribe(timestamp => console.log(timestamp))
 ```
 
 
