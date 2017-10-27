@@ -63,4 +63,5 @@
 * [How can I subscribe to a series of numbers?](rxjs-recipes/how-can-i-subscribe-to-a-series-of-numbers.md)
 * [How can I subscribe to an array of numbers?](rxjs-recipes/how-can-i-subscribe-to-an-array-of-numbers.md)
 * [How can I transform an array of numbers?](rxjs-recipes/how-can-i-transform-an-array-of-numbers.md)
+* [How can I listen to debounced double-click events on an HTML element?](rxjs-recipes/how-can-i-listen-to-debounced-double-click-events-on-an-html-element.md)
 
