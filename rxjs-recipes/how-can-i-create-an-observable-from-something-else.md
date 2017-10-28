@@ -25,6 +25,9 @@ fromEvent(button, 'click').subscribe(event => info('clicked'))
 const url = 'https://swapi.co/api/people/1'
 fromPromise(fetch(url).then(response => response.json()))
   .subscribe(data => info(data))
+  
+// How can I get a count of total clicks accumulated so far
+fromEvent(button, 'click').scan((x, y) => x + 1, 0).subscribe(count => info(count))
 ```
 
 
