@@ -36,6 +36,13 @@ from(ids)
   .flatMap(url => fetch(url))
   .flatMap(response => response.json())
   .subscribe(x => info(x.name))
+  
+// How can I create an Observable that returns custom values?
+new Rx.Observable((observer) => {
+  observer.next('first-value')
+  observer.next('second-value')
+  observer.complete()
+  }).subscribe(value => info(value))
 ```
 
 
