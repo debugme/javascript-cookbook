@@ -1,6 +1,5 @@
 ```js
-
-const { from, of, pairs, fromEvent } = Rx.Observable
+const { from, of, pairs, fromEvent, fromPromise } = Rx.Observable
 const { info } = console
 
 // How can I create a stream of characters from a string
@@ -21,6 +20,11 @@ of(1, 2, 3).subscribe(value => info(value))
 // How can I create a stream of events from a click on a button
 const button = document.querySelector('.btn')
 fromEvent(button, 'click').subscribe(event => info('clicked'))
+
+// How can I create an Observable from a Promise
+const url = 'https://swapi.co/api/people/1'
+fromPromise(fetch(url).then(response => response.json()))
+  .subscribe(data => info(data))
 ```
 
 
