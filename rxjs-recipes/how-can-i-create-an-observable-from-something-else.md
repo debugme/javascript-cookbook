@@ -25,9 +25,17 @@ fromEvent(button, 'click').subscribe(event => info('clicked'))
 const url = 'https://swapi.co/api/people/1'
 fromPromise(fetch(url).then(response => response.json()))
   .subscribe(data => info(data))
-  
+
 // How can I get a count of total clicks accumulated so far
 fromEvent(button, 'click').scan((x, y) => x + 1, 0).subscribe(count => info(count))
+
+// How can I make multiple asynch requests
+const ids = [1, 2, 3]
+from(ids)
+  .map(id => `https://swapi.co/api/people/${id}`)
+  .flatMap(url => fetch(url))
+  .flatMap(response => response.json())
+  .subscribe(x => info(x.name))
 ```
 
 
