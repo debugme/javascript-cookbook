@@ -1,5 +1,6 @@
 ```js
-const { from, of, pairs, fromEvent, fromPromise } = Rx.Observable
+const { Observable } from Rx
+const { from, of, pairs, fromEvent, fromPromise } = Observable
 const { info } = console
 
 // How can I create a stream of characters from a string
@@ -36,13 +37,16 @@ from(ids)
   .flatMap(url => fetch(url))
   .flatMap(response => response.json())
   .subscribe(x => info(x.name))
-  
+
 // How can I create an Observable that returns custom values?
-new Rx.Observable((observer) => {
+new Observable((observer) => {
   observer.next('first-value')
   observer.next('second-value')
   observer.complete()
   }).subscribe(value => info(value))
+  
+// What is the correct way to import RxJS to reduce page bloat?
+import { Observable } from 'rxjs/Observable'  
 ```
 
 
