@@ -1,4 +1,5 @@
 ```js
+// BEFORE
 // Data is mixed up with conditional logic
 function createStudent(info){
   const { likesJavaScript = false, likesES2015 = false } = info
@@ -13,11 +14,10 @@ function createStudent(info){
   }  
   return 'The student does not like much...'
 }
-
-
 ```
 
 ```js
+// AFTER
 // Data is separated from conditional logic
 const lookUpMap = {
   'true:true': 'The student likes JavaScript and ES2015!',
