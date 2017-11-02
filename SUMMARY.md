@@ -57,6 +57,10 @@
 * [How can I redirect from one route to another route?](react-router-recipes/how-can-i-redirect-from-one-route-to-another-route.md)
 * [How can I intercept transitioning from one route to another route?](react-router-recipes/how-can-i-intercept-transitioning-from-one-route-to-another-route.md)
 
+## Conditional Logic Recipes
+
+* [How can I avoid using multiple if..else if...else if style code?](conditional-logic-recipes/how-can-i-avoid-using-multiple-ifelse-ifelse-if-style-code.md)
+
 ## RxJS Recipes
 
 * [How can I subscribe to a series of numbers?](rxjs-recipes/how-can-i-subscribe-to-a-series-of-numbers.md)
@@ -64,8 +68,4 @@
 * [How can I transform an array of numbers?](rxjs-recipes/how-can-i-transform-an-array-of-numbers.md)
 * [How can I listen to double-click events?](rxjs-recipes/how-can-i-listen-to-debounced-double-click-events-on-an-html-element.md)
 * [How can I create an Observable from something else?](rxjs-recipes/how-can-i-create-an-observable-from-something-else.md)
-
-## Conditional Logic Recipes
-
-* How can I avoid using multiple if..else if...else if style code?
 
