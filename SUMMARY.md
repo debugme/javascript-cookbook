@@ -4,10 +4,6 @@
 
 * [Introduction](README.md)
 
-## Numerical Recipes
-
-* [How can I tell if a value is a number?](numerical-recipes/how-can-i-tell-if-a-value-is-a-number.md)
-
 ## Array Recipes
 
 * [How can I filter out falsey values?](first-question.md)
