@@ -6,7 +6,7 @@ static propTypes = {
 ```
 
 ```jsx
-// How to require a named property is of type string
+// How to require a named property is of type string and that it is required
 static propTypes = {
   firstName: PropTypes.string.isRequired
 }
