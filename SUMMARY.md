@@ -41,6 +41,7 @@
 
 * [How can I pass props to a React component?](react/how-can-i-pass-in-props.md)
 * [How can I conditionally render JSX?](react/how-can-i-code-the-render-method.md)
+* [What are the different types of PropTypes I can use?](react/what-are-the-different-types-of-proptypes-i-can-use.md)
 
 ## React Router Recipes
 
