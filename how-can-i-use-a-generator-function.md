@@ -5,7 +5,7 @@ function* rangeGenerator(from, upto, step = 1) {
   }
 }
 
-const range = rangeGenerator(0, 10)
+let range = rangeGenerator(0, 10)
 
 for (let value of range) {
   console.log(`value is ${value}`)
