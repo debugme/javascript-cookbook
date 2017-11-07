@@ -13,5 +13,14 @@ for (let value of range) {
 }
 ```
 
+```js
+// How to yield asynchronous values
+function* getData(uri) {
+    console.log('start')
+    yield fetch(uri).then(response => response.json())
+    console.log('end')    
+}
+```
+
 
 
