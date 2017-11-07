@@ -9,7 +9,7 @@ class Person {
 const personOne = new Person()
 const personTwo = new Person()
 
-// Case1: Rebinding `this` is NOT allowed
+// Case1: Rebinding `this` IS allowed
 personOne.setName1.call(personTwo, '1')
 console.log('1: ', personTwo)
 
@@ -20,12 +20,7 @@ console.log('2: ', personTwo)
 // Case3: Rebinding `this` IS allowed
 personOne.setName3.call(personTwo, '3')
 console.log('3: ', personTwo)
-
-
-
 ```
-
-
 
 
 
