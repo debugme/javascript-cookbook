@@ -6,9 +6,23 @@ class Person {
   setName3 = (name) => this.name = name
 }
 
+
+
+
+```
+
+```js
 const personOne = new Person()
 const personTwo = new Person()
 
+
+```
+
+```js
+
+```
+
+```js
 // Case1: Rebinding `this` IS allowed
 personOne.setName1.call(personTwo, '1')
 console.log('1: ', personTwo)
