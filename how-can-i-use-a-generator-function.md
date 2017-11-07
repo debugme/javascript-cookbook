@@ -1,26 +1,31 @@
 ```js
-// How to yield synchronous values
-function* rangeGenerator(from, upto, step = 1) {
-  for (let index = from; index < upto; index += step) {
-    yield index
-  }
+class Person {
+  constructor() { this.name = 0 }
+  setName1(name) { this.name = name }
+  setName2 = (name) => this.name = name
+  setName3 = function(name) { this.name = name }
 }
 
-let range = rangeGenerator(0, 10)
+const personOne = new Person()
+const personTwo = new Person()
 
-for (let value of range) {
-  console.log(`value is ${value}`)
-}
+// Case1: Rebinding `this` is NOT allowed
+personOne.setName1.call(personTwo, '1')
+console.log('1: ', personTwo)
+
+// Case2: Rebinding `this` is NOT allowed
+personOne.setName2.call(personTwo, '2')
+console.log('2: ', personTwo)
+
+// Case3: Rebinding `this` IS allowed
+personOne.setName3.call(personTwo, '3')
+console.log('3: ', personTwo)
+
+
+
 ```
 
-```js
-// How to yield asynchronous values
-function* getData(uri) {
-    console.log('start')
-    yield fetch(uri).then(response => response.json())
-    console.log('end')    
-}
-```
+
 
 
 

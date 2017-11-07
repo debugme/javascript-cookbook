@@ -28,7 +28,7 @@
 * [How to find out where your function is being called from](how-to-find-out-where-your-function-is-being-called-from.md)
 * [How can I simplify argument validation in a function?](how-can-i-simplify-argument-validation-in-a-function.md)
 * [How would I handle errors?](how-would-i-handle-errors.md)
-* [How can I use a generator function?](how-can-i-use-a-generator-function.md)
+* [What types of functions can I rebind?](how-can-i-use-a-generator-function.md)
 
 ## Asynchronous Recipes
 
