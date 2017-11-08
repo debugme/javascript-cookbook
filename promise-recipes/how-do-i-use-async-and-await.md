@@ -38,6 +38,8 @@ getMessage().then((message) => console.log(message))
 
 ```js
 // How can I make async requests in parallel fashion (Faster)
+
+// Approach 1: Requests are made in parallel
 async function getMovieDetails(){
   const request1 = $.getJSON('https://omdbapi.com?t=temple&apikey=thewdb')
   const request2 = $.getJSON('https://omdbapi.com?t=tide&apikey=thewdb')
@@ -47,6 +49,10 @@ async function getMovieDetails(){
 }
 
 getMovieDetails().then(detailsList => detailsList.map(detail => console.log(detail)))
+
+
+// Approach 2: requests are also made in parallel
+
 ```
 
 ```js
