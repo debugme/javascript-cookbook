@@ -37,5 +37,15 @@ const getMessage = async () => 'hello'
 getMessage().then((message) => console.log(message))
 ```
 
+```js
+async function getMovieDetails(){
+  const keywordList = ['temple', 'tide']
+  const addressList = keywordList.map(t => `https://omdbapi.com?t=${t}&apikey=thewdb`)
+  const requestList = addressList.map(request => $.getJSON(request))
+  const detailsList = await Promise.all(requestList)
+  return detailsList
+}
+```
+
 
 
