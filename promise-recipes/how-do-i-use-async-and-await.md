@@ -31,8 +31,8 @@ g()
 ```
 
 ```js
-// Async function returns a promise
-async getMessage() => 'hello'
+// The return value of an async function is wrapped in a promise
+const getMessage = async () => 'hello'
 
 getMessage().then((message) => console.log(message))
 ```
