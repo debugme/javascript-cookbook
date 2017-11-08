@@ -52,6 +52,18 @@ getMovieDetails().then(detailsList => detailsList.map(detail => console.log(deta
 
 ```js
 // How can I make async requests in serial fashion
+async function getMovieDetails(){
+  const keywordList = ['temple', 'tide']
+  const addressList = keywordList.map(t => `https://omdbapi.com?t=${t}&apikey=thewdb`)
+  const requestList = addressList.map(request => $.getJSON(request))
+  const detailsList = await Promise.all(requestList)
+  return detailsList
+  
+  const details1 = await $.getJSON('https://omdbapi.com?t=temple&apikey=thewdb')
+  const details2 = await $.getJSON('https://omdbapi.com?t=tide&apikey=thewdb')  
+}
+
+getMovieDetails().then(detailsList => detailsList.map(detail => console.log(detail)))
 ```
 
 
