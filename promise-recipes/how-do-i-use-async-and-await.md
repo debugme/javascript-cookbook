@@ -38,6 +38,7 @@ getMessage().then((message) => console.log(message))
 ```
 
 ```js
+// How can I concurrently make multiple requests
 async function getMovieDetails(){
   const keywordList = ['temple', 'tide']
   const addressList = keywordList.map(t => `https://omdbapi.com?t=${t}&apikey=thewdb`)
