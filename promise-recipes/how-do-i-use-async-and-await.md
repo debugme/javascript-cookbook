@@ -38,7 +38,7 @@ getMessage().then((message) => console.log(message))
 ```
 
 ```js
-// How can I concurrently make multiple requests
+// How can I make async requests in parallel fashion
 async function getMovieDetails(){
   const keywordList = ['temple', 'tide']
   const addressList = keywordList.map(t => `https://omdbapi.com?t=${t}&apikey=thewdb`)
@@ -48,6 +48,10 @@ async function getMovieDetails(){
 }
 
 getMovieDetails().then(detailsList => detailsList.map(detail => console.log(detail)))
+```
+
+```js
+// How can I make async requests in serial fashion
 ```
 
 
