@@ -12,8 +12,6 @@ async function f () {
 }
 
 f()
-
-
 ```
 
 ```js
@@ -30,6 +28,13 @@ async function g () {
 }
 
 g()
+```
+
+```js
+// Async function returns a promise
+async getMessage() => 'hello'
+
+getMessage().then((message) => console.log(message))
 ```
 
 
