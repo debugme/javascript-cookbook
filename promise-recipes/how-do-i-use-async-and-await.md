@@ -45,6 +45,8 @@ async function getMovieDetails(){
   const detailsList = await Promise.all(requestList)
   return detailsList
 }
+
+getMovieDetails().then(detailsList => detailsList.map(detail => console.log(detail)))
 ```
 
 
