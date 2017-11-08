@@ -39,11 +39,6 @@ getMessage().then((message) => console.log(message))
 ```js
 // How can I make async requests in parallel fashion
 async function getMovieDetails(){
-  // const keywordList = ['temple', 'tide']
-  // const addressList = keywordList.map(t => `https://omdbapi.com?t=${t}&apikey=thewdb`)
-  // const requestList = addressList.map(request => $.getJSON(request))
-  // const detailsList = await Promise.all(requestList)
-  // return detailsList
   const request1 = $.getJSON('https://omdbapi.com?t=temple&apikey=thewdb')
   const request2 = $.getJSON('https://omdbapi.com?t=tide&apikey=thewdb')
   const details1 = await request1
