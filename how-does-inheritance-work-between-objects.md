@@ -24,10 +24,24 @@ Person.prototype.setName = function(name) {
 const alexis = new Person('Alexis')
 const roger = new Person('Roger')
 roger.setName('Roget')
-console.log(alexis.setName === roger.setName)
+console.assert(alexis.setName === roger.setName, 'Error: setName should be the same')
 
 
 // Properties and methods added to `this` in the constructor function are not shared between instances
+function Person(name) {
+  this.name = name
+  this.setName = function(name) {
+    this.name = name
+  }
+}
+const robin = new Person('Robin')
+const mladen = new Person('Mladen')
+console.assert(robin.setName !== mladen.setName, 'Error: setName should be different')
+
+
+
+
+
 ```
 
 
