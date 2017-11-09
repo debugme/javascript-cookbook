@@ -8,7 +8,8 @@ function Person(name) {
 console.log(Person.prototype)
 
 // The `prototype` property has a `constructor` property that aliases the constructor function
-console.assert(Person.prototype.constructor === Person, 'Error: constructor property should alias constructor function')
+const errorMessage = 'Error: constructor property should alias constructor function'
+console.assert(Person.prototype.constructor === Person, errorMessage)
 
 // Instances of the constructor function are given a property of `__proto__`
 const ben = new Person('Ben')
