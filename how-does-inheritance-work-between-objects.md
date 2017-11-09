@@ -24,7 +24,7 @@ Person.prototype.setName = function(name) {
 const alexis = new Person('Alexis')
 const roger = new Person('Roger')
 roger.setName('Roget')
-console.log(alexis.setAge === roger.setAge)
+console.log(alexis.setName === roger.setName)
 
 
 // Properties and methods added to `this` in the constructor function are not shared between instances
