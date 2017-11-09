@@ -62,7 +62,7 @@ console.log(asad.age)
 
 // This is because when you access a property/method on an instance, 
 // (1) it looks on itself for that property/method and returns it if found; else...
-// (2) it looks on its `__proto__` property which aliases the constructor functions `prototype` property
+// (2) it looks on its `__proto__` property which aliases the constructor function's `prototype` property
 ```
 
 ```js
