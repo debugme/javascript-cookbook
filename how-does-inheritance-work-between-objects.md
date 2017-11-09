@@ -84,7 +84,7 @@ Student.prototype = Object.create(Person.prototype)
 Student.prototype.constructor = Student
 
 // Approach 2
-class Person { constructor(name){ super(); this.name = name }}
+class Person { constructor(name){ this.name = name }}
 class Student extends Person { constructor(name){super(name)}}
 ```
 
