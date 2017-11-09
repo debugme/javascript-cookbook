@@ -63,6 +63,8 @@ console.log(asad.age)
 // This is because when you access a property/method on an instance, 
 // (1) it looks on itself for that property/method and returns it if found; else...
 // (2) it looks on its `__proto__` property which aliases the constructor function's `prototype` property
+// (3) it keeps looking up the `__proto__` chain until it find its property/method
+// (4) it stops when it reaches Object.prototype.__proto__ because that is null
 function Rabbit() {
   this.getName = function() { return 'rabbit' }
 }
@@ -70,8 +72,6 @@ Rabbit.prototype.getAge = function() { return 10; }
 const robbie = new Rabbit()
 console.log('Access method on instance directly: ', robbie.getName())
 console.log('Access method on instance via prototype: ', robbie.getAge())
-
-
 ```
 
 ```js
