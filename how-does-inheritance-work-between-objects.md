@@ -15,7 +15,7 @@ const ben = new Person('Ben')
 console.log(ben.__proto__)
 
 // The `__proto__` property aliases the constructor function's prototype
-console.log(ben.__proto__ === Person.prototype)
+console.assert(ben.__proto__ === Person.prototype, 'Error: __proto__ should alias prototype')
 
 // Methods added to the constructor function's `prototype` property are shared between instances
 Person.prototype.setName = function(name) {
@@ -37,11 +37,6 @@ function Person(name) {
 const robin = new Person('Robin')
 const mladen = new Person('Mladen')
 console.assert(robin.setName !== mladen.setName, 'Error: setName should be different')
-
-
-
-
-
 ```
 
 
