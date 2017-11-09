@@ -16,7 +16,8 @@ const ben = new Person('Ben')
 console.log(ben.__proto__)
 
 // The `__proto__` property aliases the constructor function's prototype
-console.assert(ben.__proto__ === Person.prototype, 'Error: __proto__ should alias prototype')
+const errorMessage = 'Error: __proto__ should alias prototype'
+console.assert(ben.__proto__ === Person.prototype, errorMessage)
 
 // Methods added to the constructor function's `prototype` property are shared between instances
 Person.prototype.setName = function(name) {
@@ -25,7 +26,8 @@ Person.prototype.setName = function(name) {
 const alexis = new Person('Alexis')
 const roger = new Person('Roger')
 roger.setName('Roget')
-console.assert(alexis.setName === roger.setName, 'Error: setName should be the same')
+const errorMessage = 'Error: setName should be the same'
+console.assert(alexis.setName === roger.setName, errorMessage)
 
 
 // Properties and methods added to `this` in the constructor function are not shared between instances
@@ -37,7 +39,8 @@ function Person(name) {
 }
 const robin = new Person('Robin')
 const mladen = new Person('Mladen')
-console.assert(robin.setName !== mladen.setName, 'Error: setName should be different')
+const errorMessage = 'Error: setName should be different'
+console.assert(robin.setName !== mladen.setName,errorMessage )
 ```
 
 
