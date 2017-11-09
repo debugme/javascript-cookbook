@@ -23,7 +23,7 @@ Person.prototype.setName = function(name) {
 }
 const alexis = new Person('Alexis')
 const roger = new Person('Roger')
-roger.setAge(20)
+roger.setName('Roget')
 console.log(alexis.age === 20 && alexis.age === roger.age)
 console.log(alexis.setAge === roger.setAge)
 
