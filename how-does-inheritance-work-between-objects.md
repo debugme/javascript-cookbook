@@ -56,6 +56,9 @@ Person.prototype.setAge = function(age) {
 }
 
 // Notice how you can access them via instances (Rather than explicitly via `prototype`)
+const asad = new Person('asad')
+asad.setAge(42)
+console.log(asad.age)
 ```
 
 ```js
