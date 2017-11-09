@@ -76,15 +76,16 @@ console.log('Access method on instance via prototype: ', robbie.getAge())
 
 ```js
 // How can I make one class inherit from another class?
-function Person(name) {
-    this.name = name
-}
 
-function Student(name) {
-    Person.call(this, name)
-}
-
+// Approach 1
+function Person(name) { this.name = name }
+function Student(name) { Person.call(this, name) }
 Student.prototype = Object.create(Person.prototype)
+Student.prototype.constructor = Student
+
+// Approach 2
+class Person { constructor(name){ super(); this.name = name }}
+class Student extends Person { constructor(name){super(name)}}
 ```
 
 
