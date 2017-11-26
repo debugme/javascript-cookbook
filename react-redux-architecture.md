@@ -31,6 +31,7 @@ const mapDispatchToProps = (dispatch, props) => ({
   onClick: () => dispatch({ type: 'LOGIN'})
 })
 
+// (4) Wire-up the component with the state of the whoel application
 export default connect(mapStateToProps, mapDispatchToProps)(LogIn)
 ```
 
