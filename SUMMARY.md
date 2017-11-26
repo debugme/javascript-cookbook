@@ -75,4 +75,5 @@
 ## Redux Recipes
 
 * [Redux - Architecture](redux-architecture.md)
+* [React-Redux - Architecture](react-redux-architecture.md)
 
