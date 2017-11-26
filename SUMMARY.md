@@ -7,6 +7,7 @@
 ## Array Recipes
 
 * [How can I filter out falsey values?](first-question.md)
+* [Redux - Architecture](redux-architecture.md)
 
 ## Object Recipes
 
