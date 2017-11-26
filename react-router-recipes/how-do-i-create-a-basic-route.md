@@ -13,12 +13,12 @@ const About = (props) => {
   return <h1>About</h1>
 }
 
-const contact = (props) => {
+const Contact = (props) => {
   console.log('Contact props: ', props)
   return <h1>Contact</h1>
 }
 
-const location = (props) => {
+const Location = (props) => {
   return props.match && <h1>Location</h1>
 }
 
@@ -27,16 +27,14 @@ const App = () => (
     <div>
       <Route exact path='/' component={Home} />
       <Route strict path='/about/' component={About} />
-      <Route path='/contact' render={contact} />
-      <Route path='/location' children={location} />
+      <Route path='/contact' render={Contact} />
+      <Route path='/location' children={Location} />
     </div>
   </BrowserRouter>
 )
 
 export default App
 ```
-
-
 
 
 
