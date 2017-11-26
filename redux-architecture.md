@@ -1,4 +1,11 @@
 ```js
+// How to install Redux as an application dependency
+npm install redux --save
+
+
+```
+
+```js
 import Redux from 'redux'
 
 // (1) How to create a root reducer
@@ -29,8 +36,6 @@ const unsubscribe = store.listen(onChange)
 
 // (6) How to stop listening to changes to the store
 unsubscribe()
-
-
 ```
 
 
