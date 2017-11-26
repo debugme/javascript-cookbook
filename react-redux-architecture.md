@@ -50,7 +50,9 @@ const application = () => (
     <Username />
   </Provider>  
 )
+
 const mountNode = document.querySelector('#root')
+
 ReactDom.render(application, mountNode)
 ```
 
