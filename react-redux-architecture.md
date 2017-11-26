@@ -10,13 +10,6 @@ const rootReducer = (state = {}, action) => {
       return state
   }
 }
-
-
-
-
-
-
-
 ```
 
 ```js
@@ -32,8 +25,6 @@ const mapDispatchToProps = (dispatch, props) => ({
   onClick: () => dispatch({ type: 'LOGIN'})
 })
 export default connect(mapStateToProps, mapDispatchToProps)(LogIn)
-
-
 ```
 
 ```js
@@ -55,14 +46,9 @@ const application = () => (
 )
 const mountNode = document.querySelector('#root')
 ReactDom.render(application, mountNode)
-
-
-
 ```
 
-```js
 
-```
 
 
 
