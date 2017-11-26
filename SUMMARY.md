@@ -7,7 +7,6 @@
 ## Array Recipes
 
 * [How can I filter out falsey values?](first-question.md)
-* [Redux - Architecture](redux-architecture.md)
 
 ## Object Recipes
 
@@ -75,6 +74,5 @@
 
 ## Redux Recipes
 
-* What are the different parts of a Redux application?
-* stuff
+* [Redux - Architecture](redux-architecture.md)
 
