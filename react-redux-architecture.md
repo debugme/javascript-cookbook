@@ -42,13 +42,11 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
-import rootReducer from './rootReducer'
 import UserName from './Username'
-
-const store = createStore(rootReducer)
+import rootReducer from './rootReducer'
 
 const application = () => (
-  <Provider store={store}>  
+  <Provider store={createStore(rootReducer)}>
     <Username />
   </Provider>  
 )
