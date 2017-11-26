@@ -45,14 +45,17 @@ import { createStore } from 'redux'
 import UserName from './Username'
 import rootReducer from './rootReducer'
 
+// Connect your application to Redux
 const application = () => (
   <Provider store={createStore(rootReducer)}>
     <Username />
   </Provider>  
 )
 
+// Define where to mount your application
 const mountNode = document.querySelector('#root')
 
+// Mount your application in the DOM tree
 ReactDom.render(application, mountNode)
 ```
 
