@@ -48,7 +48,7 @@
 ## React Router Recipes
 
 * [How do I install react router 4 as an application dependency](react-router-recipes/how-do-i-install-react-router-4-as-an-application-dependency.md)
-* [What the different types of routes that I can create?](react-router-recipes/how-do-i-create-a-basic-route.md)
+* [What are the different types of routes that I can create?](react-router-recipes/how-do-i-create-a-basic-route.md)
 * [How can I navigate between different types of routes?](react-router-recipes/how-can-i-navigate-between-different-types-of-routes.md)
 * [How can I style the link for the route that is currently active?](react-router-recipes/how-can-i-style-the-link-for-the-route-that-is-currently-active.md)
 * [How can I pass parameters to my routes?](react-router-recipes/how-can-i-pass-parameters-to-my-routes.md)
