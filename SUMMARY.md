@@ -72,3 +72,7 @@
 * [How can I listen to double-click events?](rxjs-recipes/how-can-i-listen-to-debounced-double-click-events-on-an-html-element.md)
 * [How can I create an Observable from something else?](rxjs-recipes/how-can-i-create-an-observable-from-something-else.md)
 
+## Redux Recipes
+
+* What are the different parts of a Redux application?
+
