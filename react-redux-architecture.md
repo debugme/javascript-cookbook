@@ -46,8 +46,10 @@ import UserName from './Username'
 import rootReducer from './rootReducer'
 
 // Connect your application to Redux
+const initialState = {}
+const store = createStore(rootReducer, initialState)
 const application = () => (
-  <Provider store={createStore(rootReducer)}>
+  <Provider store={store}>
     <Username />
   </Provider>  
 )
