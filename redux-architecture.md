@@ -1,8 +1,6 @@
 ```js
 // How to install Redux as an application dependency
 npm install redux --save
-
-
 ```
 
 ```js
@@ -21,7 +19,8 @@ const rootReducer = (state = {}, action) => {
 }
 
 // (2) How to create a store associated with the root reducer
-const store = Redux.createStore(rootReducer)
+const initialState = {}
+const store = Redux.createStore(rootReducer, initialState)
 
 // (3) How to dispatch an action to the store
 const action = { type: 'LOGIN' }
@@ -31,7 +30,7 @@ store.dispatch(action)
 const state = store.getState()
 
 // (5) How to listen to changes to the store
-const onChange = (store) => console.log('[onChange] ', store.getState())
+const onChange = () => console.log('[onChange] ', store.getState())
 const unsubscribe = store.listen(onChange)
 
 // (6) How to stop listening to changes to the store
