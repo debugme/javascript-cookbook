@@ -35,7 +35,9 @@ export default ErrorBoundary
 ```js
 const App = () => {
     return (
-        <Errorr>
+    <ErrorBoundary>
+        <MyBaa>
+    </ErrorBoundary>
     )
 }
 ```
