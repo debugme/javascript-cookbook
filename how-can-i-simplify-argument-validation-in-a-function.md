@@ -1,7 +1,7 @@
 ```js
 // A function with typical error checking
 toLowerCase: (array) => {
-  if (array) {
+  if (typeof array !== 'undefined') {
     return array.map(item => item.toLowerCase())
   }
   return []
