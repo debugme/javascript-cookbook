@@ -30,7 +30,14 @@ class ErrorBoundary extends Component {
 }
 
 export default ErrorBoundary
+```
 
+```js
+const App = () => {
+    return (
+        <Errorr>
+    )
+}
 ```
 
 
