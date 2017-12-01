@@ -61,9 +61,6 @@ async function getMovieDetails(){
 }
 
 getMovieDetails().then(detailsList => detailsList.map(detail => console.log(detail)))
-
-
-
 ```
 
 ```js
