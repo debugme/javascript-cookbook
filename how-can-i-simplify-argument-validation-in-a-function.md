@@ -7,7 +7,7 @@ toLowerCase: (array) => {
   return []
 }
 
-// A function that uses default value to eliminate error checking
+// A function that uses default value to check for undefined arguments being passed in
 toLowerCase: (array = []) => array.map(item => item.toLowerCase())
 ```
 
