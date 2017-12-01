@@ -33,10 +33,13 @@ export default ErrorBoundary
 ```
 
 ```js
+const MyBadComponent = () => throw new Error('naughty!')
+
 const App = () => {
     return (
     <ErrorBoundary>
-        <MyBaa>
+        <h1>Test Page</h1>
+        <MyBadComponent />
     </ErrorBoundary>
     )
 }
