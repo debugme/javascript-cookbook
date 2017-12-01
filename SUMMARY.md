@@ -64,6 +64,7 @@
 ## Conditional Logic Recipes
 
 * [How can I avoid using multiple if..else if...else if style code?](conditional-logic-recipes/how-can-i-avoid-using-multiple-ifelse-ifelse-if-style-code.md)
+* [How can I check which of several booleans is true?](conditional-logic-recipes/how-can-i-check-which-of-several-booleans-is-true.md)
 
 ## RxJS Recipes
 
