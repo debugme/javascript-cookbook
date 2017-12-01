@@ -16,6 +16,8 @@
 ```
 
 ```js
+// worker.js
+
 // worker listens for messages from master
 this.addEventListener('message', (event) => {
     console.log(`${event.data}`)
