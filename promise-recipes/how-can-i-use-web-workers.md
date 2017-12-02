@@ -21,7 +21,7 @@ importScripts('helpers.js')
 
 // worker listens for messages from master
 this.addEventListener('message', (event) => {
-    console.log(`${event.data}`)
+    echo(`${event.data}`)
 })
 
 // worker dispatches message for master
