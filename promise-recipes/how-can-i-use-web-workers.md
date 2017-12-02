@@ -17,6 +17,7 @@
 
 ```js
 // worker.js
+importScripts('helpers.js')
 
 // worker listens for messages from master
 this.addEventListener('message', (event) => {
@@ -25,6 +26,11 @@ this.addEventListener('message', (event) => {
 
 // worker dispatches message for master
 this.postMessage('c')
+```
+
+```js
+// helpers.js
+const echo = (data) => console.log(data)
 ```
 
 
