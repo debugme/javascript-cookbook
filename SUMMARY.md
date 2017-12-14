@@ -4,6 +4,10 @@
 
 * [Introduction](README.md)
 
+## SEO Recipes
+
+* [How can I add more metadata to my page to improve SEO?](seo-recipes/how-can-i-add-more-metadata-to-my-page-to-improve-seo.md)
+
 ## Array Recipes
 
 * [How can I filter out falsey values?](first-question.md)
