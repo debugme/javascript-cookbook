@@ -23,5 +23,9 @@ og:site_name - If your object is part of a larger web site, the name which shoul
 og:video - A URL to a video file that complements this object.
 ```
 
+See the following link on the Open Graph Protocol for more information
+
+[http://ogp.me/](http://ogp.me/)
+
 
 
