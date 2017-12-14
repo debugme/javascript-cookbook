@@ -1,4 +1,6 @@
 ```html
+Mandatory Metatags
+
 <html>
 <head>
   <meta property="og:title" content="The Rock" />
@@ -11,9 +13,9 @@
 </html>
 ```
 
+```html
 Optional Metatags
 
-```html
 og:audio - A URL to an audio file to accompany this object.
 og:description - A one to two sentence description of your object.
 og:determiner - The word that appears before this object's title in a sentence. An enum of (a, an, the, "", auto). If auto is chosen, the consumer of your data should chose between "a" or "an". Default is "" (blank).
@@ -26,6 +28,4 @@ og:video - A URL to a video file that complements this object.
 See the following link on the Open Graph Protocol for more information
 
 [http://ogp.me/](http://ogp.me/)
-
-
 
