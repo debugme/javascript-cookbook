@@ -39,24 +39,21 @@ Promise.resolve(1)
   .then(data => Promise.resolve(data + 1))
   .then(data => console.log(`[case7] pass: ${JSON.stringify(data)}`))
   .catch(error => console.log(`[case7] fail: ${error.toString()}`))
-  
+
 // Case 8: How to avoid fail fast behaviour of Promise.all()
 const request = async (data) => {
   try {
     if (data % 2 !== 0) { throw new Error(`${data} is not even`) }
-    return Promise.resolve({ value: data, status: 'pass' })
+    return Promise.resolve({ value: data, valid: true })
   } catch (error) {
-    return Promise.resolve({ value: error.toString(), status: 'fail' })
+    return Promise.resolve({ value: error.toString(), valid: false })
   }
 }
 
-const questionList = [request(2), request(5), request(8)]
-
 Promise
-  .all(questionList)
-  .then(resultsList => Promise.resolve(resultsList.filter(answer => answer.status === 'pass')))
+  .all([request(2), request(5), request(8)])
+  .then(results => Promise.resolve(results.filter(({ valid }) => valid)))
   .then(answerList => console.log(answerList))
-
 ```
 
 
