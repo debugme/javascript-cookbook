@@ -52,7 +52,7 @@ const request = async (data) => {
 
 Promise
   .all([request(2), request(5), request(8)])
-  .then(results => Promise.resolve(results.filter(({ valid }) => valid)))
+  .then(results => results.filter(({ valid }) => valid))
   .then(answers => console.log(answers))
 ```
 
