@@ -43,7 +43,7 @@ Promise.resolve(1)
 // Case 8: How to avoid fail fast behaviour of Promise.all()
 const request = async (data) => {
   try {
-    if (data % 2 !== 0) { throw new Error(`${data} is not even`) }
+    if (data % 2 !== 0) throw new Error(`${data} is not even`)
     return Promise.resolve({ value: data, valid: true })
   } catch (error) {
     return Promise.resolve({ value: error.toString(), valid: false })
@@ -53,7 +53,8 @@ const request = async (data) => {
 Promise
   .all([request(2), request(5), request(8)])
   .then(results => Promise.resolve(results.filter(({ valid }) => valid)))
-  .then(answerList => console.log(answerList))
+  .then(answers => console.log(answers))
+
 ```
 
 
