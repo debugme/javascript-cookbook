@@ -22,6 +22,7 @@
 * [How can I build an object with computed property names?](how-can-i-build-an-object-whose-key-names-are-determined-by-variables.md)
 * [What does 'this' mean?](what-does-this-mean.md)
 * [How does inheritance work between objects?](how-does-inheritance-work-between-objects.md)
+* [How can I build a query string from an object?](how-can-i-build-a-query-string-from-an-object.md)
 
 ## String Recipes
 
