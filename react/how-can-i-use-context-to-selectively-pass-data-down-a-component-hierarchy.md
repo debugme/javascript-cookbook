@@ -46,14 +46,7 @@ class Form extends Component {
   render = () => {
     // (5) This is how you access `context` from a method
     console.log('[x] this.context', this.context)
-    const { done, data } = this.props
-    const message = done ? data : 'loading...'
-    return (
-      <div>
-        <button onClick={this.onClick}>Get data via thunk</button>
-        <label>{message}</label>
-      </div>
-    )
+    return <div></div>
   }
 }
 
