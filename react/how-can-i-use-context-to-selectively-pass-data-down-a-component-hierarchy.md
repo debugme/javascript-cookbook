@@ -1,4 +1,7 @@
 ```jsx
+// ------------------------------------------
+//      ADD VALUES ONTO CONTEXT HERE
+// ------------------------------------------
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
@@ -19,6 +22,9 @@ class FormContainer extends Component {
 }
 
 export default connect()(FormContainer)
+```
+
+```jsx
 
 ```
 
