@@ -51,6 +51,7 @@
 * [How can I conditionally render JSX?](react/how-can-i-code-the-render-method.md)
 * [What are the different types of PropTypes I can use?](react/what-are-the-different-types-of-proptypes-i-can-use.md)
 * [How can I handle a component throwing an uncaught exception?](react/how-can-i-handle-a-component-throwing-an-uncaught-exception.md)
+* [How can I use context to selectively pass data down a component hierarchy?](react/how-can-i-use-context-to-selectively-pass-data-down-a-component-hierarchy.md)
 
 ## React Router Recipes
 
