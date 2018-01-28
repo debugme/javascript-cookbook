@@ -4,16 +4,15 @@
 // ------------------------------------------
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
 import Form from './form.component'
 
 class FormContainer extends Component {
-  // (1) Define keys to be added onto global context
+  // (1) Define keys to be added onto context
   static childContextTypes = {
     ape: PropTypes.string.isRequired,
     bat: PropTypes.string.isRequired
   }
-  // (2) Define data to be added onto global context
+  // (2) Define data to be added onto context
   getChildContext = () => ({
     ape: 'ape',
     bat: 'bat'
@@ -21,7 +20,7 @@ class FormContainer extends Component {
   render () => <Form {...this.props} />
 }
 
-export default connect()(FormContainer)
+export default FormContainer
 ```
 
 ```jsx
@@ -32,10 +31,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 class Form extends Component {
-  // (3) We only want `store` and `bat` off of context
-  // So the context object will NOT have `ape` on it
+  // (3) We only want `bat` off of context, so context object will NOT have `ape` on it
   static contextTypes = {
-    store: PropTypes.object.isRequired,
     bat: PropTypes.string.isRequired
   }
   constructor(props, context) {
