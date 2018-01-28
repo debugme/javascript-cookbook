@@ -4,9 +4,9 @@
 // ------------------------------------------
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Form from './form.component'
+import Header from './form.component'
 
-class FormContainer extends Component {
+class Page extends Component {
   // (1) Define keys to be added onto context
   static childContextTypes = {
     ape: PropTypes.string.isRequired,
@@ -14,13 +14,13 @@ class FormContainer extends Component {
   }
   // (2) Define data to be added onto context
   getChildContext = () => ({
-    ape: 'ape',
-    bat: 'bat'
+    ape: 'Ape',
+    bat: 'Bat'
   })
-  render () => <Form {...this.props} />
+  render () => <Header {...this.props} />
 }
 
-export default FormContainer
+export default Page
 ```
 
 ```jsx
@@ -30,7 +30,7 @@ export default FormContainer
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-class Form extends Component {
+class Header extends Component {
   // (3) We only want `bat` off of context, so context object will NOT have `ape` on it
   static contextTypes = {
     bat: PropTypes.string.isRequired
@@ -43,11 +43,11 @@ class Form extends Component {
   render = () => {
     // (5) This is how you access `context` from a method
     console.log('[x] this.context', this.context)
-    return <div></div>
+    return <h1>hello world</h1>
   }
 }
 
-export default Form
+export default Header
 ```
 
 
