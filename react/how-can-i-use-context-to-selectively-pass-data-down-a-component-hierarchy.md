@@ -1,5 +1,7 @@
 ```js
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+
 class Chapter extends Component {
   static childContextTypes = {
     pageTitle: PropTypes.string.isRequired,
