@@ -51,7 +51,7 @@ export default Header
 ```
 
 ```js
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 class Chapter extends Component {
@@ -63,13 +63,7 @@ class Chapter extends Component {
       pageTitle: 'page title',
       paragraphTitle: 'paragraph title'      
   })
-  render = () => (
-    <Fragment>
-      <Page>
-        <Paragraph />
-      </Page>
-    </Fragment>
-  )  
+  render = () => <Page /> 
 }
 ```
 
@@ -78,7 +72,17 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 class Page extends Component {
-  
+  static contextTypes = {
+    pageTitle: PropTypes.string.isRequired
+  }
+  constructor(props, context) {
+    super(props)
+    console.log('[x] context', context)
+  }
+  render = () => {
+    console.log('[x] this.context', this.context)
+    return <h1>hello world</h1>
+  }  
 }
 ```
 
