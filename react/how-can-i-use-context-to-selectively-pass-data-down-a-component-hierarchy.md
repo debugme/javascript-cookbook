@@ -81,7 +81,7 @@ class Page extends Component {
   }
   render = () => {
     console.log('[x] this.context', this.context)
-    return <h1>hello world</h1>
+    return <Paragraph />
   }  
 }
 ```
