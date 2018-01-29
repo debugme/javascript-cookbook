@@ -41,7 +41,8 @@ import PropTypes from 'prop-types'
 
 class Paragraph extends Component {
   static contextTypes = {
-    paragraphTitle: PropTypes.string.isRequired
+    paragraphTitle: PropTypes.string.isRequired   // (5) Expose `context.paragraphTitle` only to this component
+
   }
   constructor(props, context) {
     super(props)
