@@ -29,7 +29,7 @@ class Page extends Component {
     console.log('[x] context', context)            // (6) Access context from constructor
   }
   render = () => {
-    console.log('[x] this.context', this.context)   // (7) Access context from method
+    console.log('[x] this.context', this.context)  // (7) Access context from method
     return <Paragraph />
   }  
 }
