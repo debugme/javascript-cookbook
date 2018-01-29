@@ -26,10 +26,10 @@ class Page extends Component {
   }
   constructor(props, context) {
     super(props)
-    console.log('[x] context', context)            // (6) Access context from constructor
+    console.log('[x] context', context)            // (6) Context will only have `pageTitle` on it
   }
   render = () => {
-    console.log('[x] this.context', this.context)  // (7) Access context from method
+    console.log('[x] this.context', this.context)  // (7) Context will only have `pageTitle` on it
     return <Paragraph />
   }  
 }
