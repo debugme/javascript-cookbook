@@ -54,5 +54,7 @@ class Paragraph extends Component {
 }
 ```
 
+The context object passed into Page, will only have pageTitle on it. 
 
+The context object passed into Paragraph, will only have paragraphTitle on it.
 
