@@ -45,10 +45,10 @@ class Paragraph extends Component {
   }
   constructor(props, context) {
     super(props)
-    console.log('[x] context', context)
+    console.log('[x] context', context)           // (6) Access context from constructor
   }
   render = () => {
-    console.log('[x] this.context', this.context)
+    console.log('[x] this.context', this.context) // (7) Access context from method
     return <p>'All Done'</p>
   }  
 }
