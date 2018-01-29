@@ -50,5 +50,28 @@ class Header extends Component {
 export default Header
 ```
 
+```js
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
+class Chapter extends Component {
+  static childContextTypes = {
+    pageTitle: PropTypes.string.isRequired,
+    paragraphTitle: PropTypes.string.isRequired
+  }
+  getChildContext = () => ({
+      pageTitle: 'page title',
+      paragraphTitle: 'paragraph title'      
+  })
+  render = () => (
+    <Fragment>
+      <Page>
+        <Paragraph />
+      </Page>
+    </Fragment>
+  )  
+}
+```
+
 
 
