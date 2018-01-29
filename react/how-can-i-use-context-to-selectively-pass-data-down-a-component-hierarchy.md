@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 
 class Chapter extends Component {
   static childContextTypes = {
-    pageTitle: PropTypes.string.isRequired,
-    paragraphTitle: PropTypes.string.isRequired
+    pageTitle: PropTypes.string.isRequired,      // (1) Add `pageTitle` to context
+    paragraphTitle: PropTypes.string.isRequired  // (2) Add `paragraphTitle` to context
   }
   getChildContext = () => ({
       pageTitle: 'page title',
