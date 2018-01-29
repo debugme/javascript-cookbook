@@ -22,7 +22,7 @@ import PropTypes from 'prop-types'
 
 class Page extends Component {
   static contextTypes = {
-    pageTitle: PropTypes.string.isRequired         // (5) Expose `context.pageTitle` only to this component
+    pageTitle: PropTypes.string.isRequired         // (5) Expose `pageTitle` only to this component
   }
   constructor(props, context) {
     super(props)
@@ -41,7 +41,7 @@ import PropTypes from 'prop-types'
 
 class Paragraph extends Component {
   static contextTypes = {
-    paragraphTitle: PropTypes.string.isRequired   // (5) Expose `context.paragraphTitle` only to this component
+    paragraphTitle: PropTypes.string.isRequired   // (5) Expose `paragraphTitle` only to this component
   }
   constructor(props, context) {
     super(props)
