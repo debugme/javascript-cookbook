@@ -51,7 +51,7 @@ export default Header
 ```
 
 ```js
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import PropTypes from 'prop-types'
 
 class Chapter extends Component {
@@ -71,6 +71,10 @@ class Chapter extends Component {
     </Fragment>
   )  
 }
+```
+
+```jsx
+
 ```
 
 
