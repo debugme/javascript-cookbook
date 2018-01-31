@@ -21,7 +21,7 @@ const withColor = (Tag) => {
      render = () => (
        <Tag {...{...this.props, changeColor: this.changeColor }} />
      )
-    }
+  }
 }
 
 export default withColor
