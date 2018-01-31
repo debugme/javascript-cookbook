@@ -27,7 +27,7 @@ const asyncMiddleware = (store) => (next) => (action) => {
     dispatch(action)
   }  
 
-  // (5) If action cannot be handled then pass action onto the next middleware in chain
+  // (5) If action cannot be handled then pass action into the next middleware in chain
   if (!isAsync) {
     return next(action)
   }
