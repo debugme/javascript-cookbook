@@ -18,7 +18,11 @@ const withChameleon = (Tag) => {
         onClick(event){
             this.style = randomRGBColor()
         }
-        render = () => <Tag {..this.props, onClick: this.onClick} />
+        render = () => {
+            const { onClick } = this
+            const props = {...this.props, onClick }
+            return <Tag {..props} />
+        }
     }
 }
 ```
