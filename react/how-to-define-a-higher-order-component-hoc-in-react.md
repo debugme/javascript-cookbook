@@ -18,7 +18,10 @@ import randomRGBColor from './randomRGBColor'
 const withColor = (Tag) => {
     return class extends Component {
         changeColor(){
-            this.style = { color: randomRGBColor() }
+            this.style = { 
+                color: randomRGBColor(),
+                backgroundColor: randomRGBColor()
+            }
         }
         render = () => {
             const { changeColor } = this
