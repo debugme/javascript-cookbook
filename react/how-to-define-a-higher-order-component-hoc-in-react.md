@@ -11,6 +11,8 @@ export default randomRGBColor
 ```
 
 ```jsx
+import React, { Component } from 'react'
+
 const withChameleon = (Tag) => {
     return class extends Component {
         onClick(event){
