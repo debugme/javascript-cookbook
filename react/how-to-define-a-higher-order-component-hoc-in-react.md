@@ -36,9 +36,7 @@ import React from 'react'
 const HeaderOne = (props) => {
   const { changeColor } = props
   const onClick = changeColor.bind(this)
-<h1 onClick={changeColor.bind(this)}>H1</h1>
-
-
+  return <h1 onClick={onClick}}>H1</h1>
 }
 
 export default HeaderOne
