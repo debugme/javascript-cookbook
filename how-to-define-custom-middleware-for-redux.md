@@ -17,7 +17,7 @@ const asyncMiddleware = (store) => (nextMiddleware) => (action) => {
   const dispatchSuccess = (jsonData) => store.dispatch(onSuccess(jsonData))
   const dispatchFailure = (error) => store.dispatch(onFailure(error))    
 
-  // (3A) Resolve the request and pass action back into top of middleware chain
+  // Case1: Resolve the request and pass action back into top of middleware chain
   if (isAsyncRequest) {
     return fetch(endpoint)
       .then(extractJsonData)
@@ -26,7 +26,7 @@ const asyncMiddleware = (store) => (nextMiddleware) => (action) => {
 
   }
 
-  // (3B) Pass action onto the next middleware in the chain
+  // Default: Pass action onto the next middleware in the chain
   return nextMiddleware(action)
 }
 ```
