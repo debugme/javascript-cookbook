@@ -16,10 +16,10 @@ const withColor = (Tag) => {
       const color = randomColor()
       const backgroundColor = randomColor()
       this.style = { color, backgroundColor }
-     }
-     render = () => {
-       return <Tag {...{...this.props, changeColor: this.changeColor }} />
-     }
+    }
+    render = () => {
+      return <Tag {...{...this.props, changeColor: this.changeColor }} />
+    }
   }
 }
 
