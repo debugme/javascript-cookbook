@@ -17,12 +17,12 @@ import randomRGBColor from './randomRGBColor'
 
 const withColor = (Tag) => {
     return class extends Component {
-        onClick(event){
+        changeColor(){
             this.style = randomRGBColor()
         }
         render = () => {
-            const { onClick } = this
-            const props = {...this.props, onClick }
+            const { changeColor } = this
+            const props = {...this.props, changeColor }
             return <Tag {..props} />
         }
     }
@@ -33,7 +33,7 @@ const withColor = (Tag) => {
 import React from 'react'
 
 const HeaderOne = (props) => {
-    return <h1 onClick={props.onClick.bind(this)}>HeaderOne Goes In Here</h1>
+    return <h1 onClick={props.changeColor.bind(this)}>HeaderOne Goes In Here</h1>
 }
 ```
 
@@ -41,7 +41,7 @@ const HeaderOne = (props) => {
 import React from 'react'
 
 const HeaderTwo = (props) => {
-    return <h2 onClick={props.onClick.bind(this)}>HeaderTwo Goes In Here</h2>
+    return <h2 onClick={props.changeColor.bind(this)}>HeaderTwo Goes In Here</h2>
 }
 ```
 
