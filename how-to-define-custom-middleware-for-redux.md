@@ -13,16 +13,16 @@ const asyncMiddleware = (store) => (nextMiddleware) => (action) => {
   } = payload
 
   // (2) Define some helpers
-  const extractJsonCargo = (response) => response.json()
-  const onRequestSuccess = (jsonData) => store.dispatch(onSuccess(jsonData))
-  const onRequestFailure = (error) => store.dispatch(onFailure(error))    
+  const extractJsonData = (response) => response.json()
+  const dispatchSuccess = (jsonData) => store.dispatch(onSuccess(jsonData))
+  const dispatchFailure = (error) => store.dispatch(onFailure(error))    
 
   // (3A) Resolve the request and pass action back into top of middleware chain
   if (isAsyncRequest) {
     return fetch(endpoint)
-      .then(extractJsonCargo)
-      .then(onRequestSuccess)
-      .catch(onRequestFailure)
+      .then(extractJsonData)
+      .then(dispatchSuccess)
+      .catch(dispatchFailure)
 
   }
 
