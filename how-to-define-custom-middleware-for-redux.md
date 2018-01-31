@@ -1,5 +1,5 @@
 ```jsx
-const asyncMiddleware = (store) => (next) => (action) => {
+const asyncMiddleware = (store) => (nextMiddleware) => (action) => {
   // (1) Pull out data from passed in action
   const { 
     type, 
@@ -11,7 +11,7 @@ const asyncMiddleware = (store) => (next) => (action) => {
     onSuccess, 
     onFailure
   } = payload
-  
+
   // (2) Define some helpers
   const extractJsonCargo = (response) => response.json()
   const onRequestSuccess = (jsonData) => store.dispatch(onSuccess(jsonData))
@@ -27,7 +27,7 @@ const asyncMiddleware = (store) => (next) => (action) => {
   }
 
   // (3B) Pass action onto the next middleware in the chain
-  return next(action)
+  return nextMiddleware(action)
 }
 ```
 
