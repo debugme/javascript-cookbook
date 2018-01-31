@@ -1,34 +1,74 @@
 ```jsx
-const asyncMiddleware = (store) => (nextMiddleware) => (action) => {
-  // (1) Pull out data from passed in action
-  const { 
-    type, 
-    payload 
-  } = action
-  const { 
-    isAsyncRequest
-    endpoint, 
-    onSuccess, 
-    onFailure
-  } = payload
 
-  // (2) Define some helpers
-  const extractJsonData = (response) => response.json()
-  const dispatchSuccess = (jsonData) => store.dispatch(onSuccess(jsonData))
-  const dispatchFailure = (error) => store.dispatch(onFailure(error))    
-
-  // Case1: Resolve the request and pass action back into TOP of middleware chain
-  if (isAsyncRequest) {
-    return fetch(endpoint)
-      .then(extractJsonData)
-      .then(dispatchSuccess)
-      .catch(dispatchFailure)
-
+const asyncMiddleware = (store) => (next) => (action) => {
+  
+  // (1) Pull off all the data your code needs
+  const { type, payload }
+  const { meta, data } = payload // NOTE: Nice to distinguish between data and metadata in our payload
+  const { isAsynch } = meta
+  const { endoint } = data
+  const { dispatch } = store
+  
+  // (2) Define a helper to pull JSON out of an AJAX response
+  const onResponse = (payload) => {
+    return payload.json()
+  }
+  
+  // (3) Define a helper to dispatch a success action if AJAX request was a success
+  const onSuccess = (payload) => {
+    const type = type.replace('_REQUEST', '_SUCCESS') // e.g. 'FETCH_ITEMS_REQUEST' -> 'FETCH_ITEMS_SUCCESS'
+    const action = { type, payload }
+    dispatch(action)
   }
 
-  // Default: Pass action onto the NEXT middleware in the chain
-  return nextMiddleware(action)
+  // (4) Define a helper to dispatch a success action if AJAX request was a failure  
+  const onFailure = (payload) => {
+    const type = type.replace('_REQUEST', '_FAILURE') // e.g. 'FETCH_ITEMS_REQUEST' -> 'FETCH_ITEMS_FAILURE'    
+    const action = { type, payload }
+    dispatch(action)
+  }  
+  
+  // (5) If action cannot be handled then pass action onto the next middleware in chain
+  if (!isAsync) {
+    return next(action)
+  }
+  
+  // (6) Process request and inject new action back into top of middleware chain
+  return fetch(endpoint)
+    .then(onResponse)
+    .then(onSuccess)
+    .catch(onFailure)    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 
 
