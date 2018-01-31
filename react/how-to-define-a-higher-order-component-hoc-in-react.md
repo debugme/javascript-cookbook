@@ -11,6 +11,7 @@ export default randomRGBColor
 
 ```jsx
 import React, { Component } from 'react'
+import randomRGBColor from './randomRGBColor'
 
 const withChameleon = (Tag) => {
     return class extends Component {
