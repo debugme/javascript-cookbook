@@ -48,6 +48,7 @@ const HeaderTwo = (props) => {
 ```jsx
 import React from 'react'
 
+// Do NOT define your HOC'd components in render() method!
 const ColorHeaderOne = withColor(HeaderOne)
 const ColorHeaderTwo = withColor(HeaderTwo)
 
