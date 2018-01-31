@@ -63,7 +63,7 @@ const ColorHeaderTwo = withColor(HeaderTwo)
 const Application = (props) => (
   <Fragment>
     <ColorHeaderOne {...props} />
-    <ColorHeaderTwo {...props} />        
+    <ColorHeaderTwo {...props} />
   </Fragment>
 )
 ```
