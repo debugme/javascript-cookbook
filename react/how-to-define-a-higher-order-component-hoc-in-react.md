@@ -30,12 +30,12 @@ const withColor = (Tag) => {
 ```
 
 ```jsx
-import React, { Component } from 'react'
-
 const HeaderOne = (props) => {
     return <h1 onClick={props.onClick.bind(this)}>HeaderOne Goes In Here</h1>
 }
+```
 
+```jsx
 const HeaderTwo = (props) => {
     return <h2 onClick={props.onClick.bind(this)}>HeaderTwo Goes In Here</h2>
 }
