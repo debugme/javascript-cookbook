@@ -1,15 +1,4 @@
 ```jsx
-import React, { Component } from 'react'
-
-class Headline extends Component {
-    render() {
-        const onClick = this.props.onClick.bind(this)
-        return <h1 onClick={onClick}>Headline Goes In Here</h1>
-    }
-}
-
-
-
 
 ```
 
@@ -32,6 +21,17 @@ const withChameleon = (Tag) => {
             this.style = randomRGBColor()
         }
         render = () => <Tag {..this.props, onClick: this.onClick} />
+    }
+}
+```
+
+```jsx
+import React, { Component } from 'react'
+
+class Headline extends Component {
+    render() {
+        const onClick = this.props.onClick.bind(this)
+        return <h1 onClick={onClick}>Headline Goes In Here</h1>
     }
 }
 ```
