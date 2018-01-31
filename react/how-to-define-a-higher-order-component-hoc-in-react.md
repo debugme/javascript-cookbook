@@ -11,7 +11,7 @@ import React, { Component } from 'react'
 import randomColor from './randomColor'
 
 const withColor = (Tag) => {
-  return class extends Component {
+  class WithColor extends Component {
     changeColor () {
       const color = randomColor()
       const backgroundColor = randomColor()
@@ -23,7 +23,17 @@ const withColor = (Tag) => {
       return <Tag {...props} />
     }
   }
+  return WithColor
 }
+
+function withSubscription(WrappedComponent) {
+  class WithSubscription extends React.Component {/* ... */}
+  WithSubscription.displayName = `WithSubscription(${getDisplayName(WrappedComponent)})`;
+  return WithSubscription;
+}
+
+function getDisplayName(WrappedComponent) {
+  return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 
 export default withColor
 ```
