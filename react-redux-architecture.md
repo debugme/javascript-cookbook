@@ -24,10 +24,10 @@ const LogIn = (props) => {
   return <button onClick={onClick}>{text}</button>
 }
 
-// (2) Define props to pass into component
+// (2) Define values to be made available on props
 const mapStateToProps = (state) => ({ text: state.text })
 
-// (3) Define store dispatches to pass into component
+// (3) Define functions to be made available on props
 const mapDispatchToProps = (dispatch, props) => {
   // Approach 1
   // const onClick = () => dispatch({ type: 'LOGIN'})
