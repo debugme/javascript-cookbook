@@ -23,6 +23,8 @@ const withColor = (Tag) => {
       return <Tag {...props} />
     }
   }
+  const { displayName, name = 'Component'} = Tag  
+  WithColor.displayName = `WithColor(${ displayName || name })`
   return WithColor
 }
 
