@@ -51,8 +51,6 @@ const HeaderTwo = (props) => {
   return <h1 onClick={onClick}}>H2</h1>
 }
 
-
-
 export default HeaderTwo
 ```
 
