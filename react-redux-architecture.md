@@ -30,9 +30,8 @@ const mapStateToProps = (state) => ({ text: state.text })
 // (3) Define store dispatches to pass into component
 const mapDispatchToProps = (dispatch, props) => {
   // Approach 1
-  // const props = {
-  //   onClick: () => dispatch({ type: 'LOGIN'})
-  // }
+  // const onClick = () => dispatch({ type: 'LOGIN'})
+  // const props = { onClick }
   // return props
 
   // Approach 2
