@@ -18,7 +18,8 @@ const withColor = (Tag) => {
       this.style = { color, backgroundColor }
     }
     render = () => {
-      const props = {...this.props, changeColor: this.changeColor }
+      const { changeColor } = this
+      const props = {...this.props, changeColor }
       return <Tag {...props} />
     }
   }
