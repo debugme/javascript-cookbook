@@ -11,6 +11,7 @@ export default randomRGBColor
 ```
 
 ```jsx
+// (2) Define a Higher Order Component
 import React, { Component } from 'react'
 import randomRGBColor from './randomRGBColor'
 
