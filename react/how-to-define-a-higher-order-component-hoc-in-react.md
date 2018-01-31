@@ -1,5 +1,4 @@
 ```jsx
-// (1) Define functions to generate pseudo-random RGB colors
 const getRGBColor = () => parseInt(Math.random() * 255, 10)
 const randomColor = () => [,,,].fill().map(getRGBColor).join(',')
 
@@ -7,7 +6,6 @@ export default randomColor
 ```
 
 ```jsx
-// (2) Define a Higher Order Component that adds color changing
 import React, { Component } from 'react'
 
 import randomColor from './randomColor'
