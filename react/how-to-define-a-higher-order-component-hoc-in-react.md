@@ -13,7 +13,7 @@ export default randomRGBColor
 import React, { Component } from 'react'
 import randomRGBColor from './randomRGBColor'
 
-const withChameleon = (Tag) => {
+const withColor = (Tag) => {
     return class extends Component {
         onClick(event){
             this.style = randomRGBColor()
@@ -30,18 +30,20 @@ const withChameleon = (Tag) => {
 ```jsx
 import React, { Component } from 'react'
 
-class Headline extends Component {
-    render() {
-        const onClick = this.props.onClick.bind(this)
-        return <h1 onClick={onClick}>Headline Goes In Here</h1>
-    }
+const HeaderOne = (props) => {
+    return <h1 onClick={props.onClick.bind(this)}>HeaderOne Goes In Here</h1>
 }
+
+const HeaderTwo = (props) => {
+    return <h2 onClick={props.onClick.bind(this)}>HeaderTwo Goes In Here</h2>
+}
+
 ```
 
 ```jsx
 import React, { Component } from 'react'
 
-const ChameleonHeadline = withChameleon(Headline)
+const ColorHeadline = withColor(Headline)
 
 const Application = (props) => <ChameleonHeadline {...props} />
 ```
