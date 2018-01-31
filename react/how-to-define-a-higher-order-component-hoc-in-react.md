@@ -1,14 +1,8 @@
 ```jsx
 // (1) Define functions to generate pseudo-random RGB colors
-const makeColor = () => parseInt(Math.random() * 255, 10)
-
-const randomRGBColor = () => {
-    const colorList = [,,,].fill().map(makeColor)
-    const colorData = colorList.join(',')
-    return colorData
-}
-
-export default randomRGBColor
+const getRGBColor = () => parseInt(Math.random() * 255, 10)
+const randomColor = () => [,,,].fill().map(getRGBColor).join(',')
+export default randomColor
 ```
 
 ```jsx
