@@ -33,9 +33,9 @@ export default withColor
 ```jsx
 import React from 'react'
 
-const HeaderOne = (props) => {
-    return <h1 onClick={props.changeColor.bind(this)}>Header One</h1>
-}
+const HeaderOne = (props) => (
+  <h1 onClick={props.changeColor.bind(this)}>Header One</h1>
+)
 
 export default HeaderOne
 ```
@@ -43,9 +43,9 @@ export default HeaderOne
 ```jsx
 import React from 'react'
 
-const HeaderTwo = (props) => {
-    return <h2 onClick={props.changeColor.bind(this)}>Header Two</h2>
-}
+const HeaderTwo = (props) => (
+  <h2 onClick={props.changeColor.bind(this)}>Header Two</h2>
+)
 
 export default HeaderTwo
 ```
