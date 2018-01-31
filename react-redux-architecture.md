@@ -33,7 +33,6 @@ const mapDispatchToProps = (dispatch, props) => {
   // const onClick = () => dispatch({ type: 'LOGIN'})
   // const props = { onClick }
   // return props
-
   // Approach 2
   const onClick = () => ({ type: 'LOGIN'})
   const actionCreators = { onClick }
