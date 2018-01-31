@@ -1,4 +1,5 @@
 ```jsx
+// (1) Define a function to generate pseudo-random RGB colors
 const randomRGBColor = () => {
     const makeColor = () => parseInt(Math.random() * 255, 10)
     const colorList = [,,,].fill().map(makeColor)
@@ -51,7 +52,6 @@ const Application = (props) => (
         <ColorHeaderTwo {...props} />        
     </Fragment>
 )
-
 ```
 
 
