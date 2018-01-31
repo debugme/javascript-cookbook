@@ -37,15 +37,21 @@ const HeaderOne = (props) => {
 const HeaderTwo = (props) => {
     return <h2 onClick={props.onClick.bind(this)}>HeaderTwo Goes In Here</h2>
 }
-
 ```
 
 ```jsx
 import React, { Component } from 'react'
 
-const ColorHeadline = withColor(Headline)
+const ColorHeaderOne = withColor(HeaderOne)
+const ColorHeaderTwo = withColor(HeaderTwo)
 
-const Application = (props) => <ChameleonHeadline {...props} />
+const Application = (props) => (
+    <Fragment>
+        <ColorHeaderOne {...props} />
+        <ColorHeaderTwo {...props} />        
+    </Fragment>
+)
+
 ```
 
 
