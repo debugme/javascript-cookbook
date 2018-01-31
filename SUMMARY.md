@@ -85,4 +85,5 @@
 
 * [Redux - Architecture](redux-architecture.md)
 * [React-Redux - Architecture](react-redux-architecture.md)
+* [How to define custom middleware for Redux](how-to-define-custom-middleware-for-redux.md)
 
