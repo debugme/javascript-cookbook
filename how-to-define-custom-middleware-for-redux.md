@@ -40,5 +40,9 @@ const asyncMiddleware = (store) => (next) => (action) => {
 }
 ```
 
-**Open Questions**: As a rule should `payload` have both `metadata` and `data` ? It seems like a nice separation of concerns.
+**Open Questions**: 
+
+1. As a rule should `payload` have both `metadata` and `data` ? It seems like a nice separation of concerns.
+
+
 
