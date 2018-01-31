@@ -50,6 +50,8 @@ import React from 'react'
 const HeaderTwo = (props) => {
     return <h2 onClick={props.changeColor.bind(this)}>HeaderTwo Goes In Here</h2>
 }
+
+export default HeaderTwo
 ```
 
 ```jsx
