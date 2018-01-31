@@ -8,14 +8,14 @@ export default randomColor
 ```jsx
 // (2) Define a Higher Order Component that adds color changing
 import React, { Component } from 'react'
-import randomRGBColor from './randomRGBColor'
+import randomColor from './randomColor'
 
 const withColor = (Tag) => {
     return class extends Component {
         changeColor(){
             this.style = { 
-                color: randomRGBColor(),
-                backgroundColor: randomRGBColor()
+                color: randomColor(),
+                backgroundColor: randomColor()
             }
         }
         render = () => {
