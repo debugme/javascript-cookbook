@@ -34,9 +34,12 @@ const mapDispatchToProps = (dispatch, props) => {
   //   onClick: () => dispatch({ type: 'LOGIN'})
   // }
   // return props
-  
+
   // Approach 2
-  
+  const onClick = () => ({ type: 'LOGIN'})
+  const actionCreators = { onClick }
+  const props = bindActionCreators(actionCreators, dispatch)
+  return props
 }
 
 // (4) Wire-up the component with the state of the whole application
