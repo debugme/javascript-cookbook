@@ -8,28 +8,32 @@ class Headline extends Component {
     }
 }
 
-const withAutoColor = (Tag) => {
-    const randomRGBColor = () => {
-        const makeColor = () => parseInt(Math.random() * 255, 10)
-        const colorList [,,,].fill().map(makeColor)
-        const colorData = colorList.join(',')
-        return colorData
-    }
+
+
+const withChameleon = (Tag) => {
     return class extends Component {
         onClick(event){
             this.style = randomRGBColor()
         }
-        componentDidMount = () => {
-            this.addEvent
-        }
-        componentWillUnmount = () => {
-        
-        }
-        render = () => {
-            return <Tag {..this.props} />
-        }
+        render = () => <Tag {..this.props, onClick: this.onClick} />
     }
 }
+```
+
+```jsx
+// randomRGBColor.js
+const randomRGBColor = () => {
+    const makeColor = () => parseInt(Math.random() * 255, 10)
+    const colorList = [,,,].fill().map(makeColor)
+    const colorData = colorList.join(',')
+    return colorData
+}
+
+export default randomRGBColor
+```
+
+```jsx
+
 ```
 
 
