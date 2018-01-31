@@ -18,10 +18,9 @@ const withColor = (Tag) => {
         backgroundColor: randomColor()
       }
      }
-     render = () => {
-       const props = {...this.props, changeColor: this.changeColor }
-       return <Tag {...props} />
-     }
+     render = () => (
+       <Tag {...{...this.props, changeColor: this.changeColor }} />
+     )
     }
 }
 
