@@ -1,5 +1,6 @@
 ```jsx
 const asyncMiddleware = (store) => (next) => (action) => {
+  // (1) Pull out data from passed in action
   const { 
     type, 
     payload 
@@ -7,20 +8,26 @@ const asyncMiddleware = (store) => (next) => (action) => {
   const { 
     isAsyncRequest
     endpoint, 
-    buildSuccessAction, 
-    buildFailureAction
+    onSuccess, 
+    onFailure
   } = payload
+  
+  // (2) Define some helpers
+  const extractJsonCargo = (response) => response.json()
+  const onRequestSuccess = (jsonData) => store.dispatch(onSuccess(jsonData))
+  const onRequestFailure = (error) => store.dispatch(onFailure(error))    
 
-  // Case1: Pass action onto the next middleware in the chain
-  if (!isAsyncRequest) {
-    return next(action)
+  // (3A) Resolve the request and pass action back into top of middleware chain
+  if (isAsyncRequest) {
+    return fetch(endpoint)
+      .then(extractJsonCargo)
+      .then(onRequestSuccess)
+      .catch(onRequestFailure)
+
   }
 
-  // Case2: Resolve the request and pass action back into top of middleware chain
-  return fetch(endpoint)
-    .then((response) => response.json())
-    .then((jsonData) => store.dispatch(buildSuccessAction(jsonData)))
-    .then((error) => store.dispatch(buildFailureAction(error)))
+  // (3B) Pass action onto the next middleware in the chain
+  return next(action)
 }
 ```
 
