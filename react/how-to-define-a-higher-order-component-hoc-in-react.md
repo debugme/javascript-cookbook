@@ -34,7 +34,7 @@ export default withColor
 import React from 'react'
 
 const HeaderOne = ({ changeColor }) => (
-  <h1 onClick={changeColor.bind(this)}>Header One</h1>
+  <h1 onClick={changeColor.bind(this)}>H1</h1>
 )
 
 export default HeaderOne
@@ -44,7 +44,7 @@ export default HeaderOne
 import React from 'react'
 
 const HeaderTwo = ({ changeColor }) => (
-  <h2 onClick={changeColor.bind(this)}>Header Two</h2>
+  <h2 onClick={changeColor.bind(this)}>H2</h2>
 )
 
 export default HeaderTwo
