@@ -16,6 +16,7 @@ const rootReducer = (state = {}, action) => {
 // LogIn.jsx
 import React from 'react'
 import { connect } from 'react-redux'
+import { bindActionCreators } = 'redux'
 
 // (1) Define the component
 const LogIn = (props) => {
@@ -27,9 +28,16 @@ const LogIn = (props) => {
 const mapStateToProps = (state) => ({ text: state.text })
 
 // (3) Define store dispatches to pass into component
-const mapDispatchToProps = (dispatch, props) => ({
-  onClick: () => dispatch({ type: 'LOGIN'})
-})
+const mapDispatchToProps = (dispatch, props) => {
+  // Approach 1
+  // const props = {
+  //   onClick: () => dispatch({ type: 'LOGIN'})
+  // }
+  // return props
+  
+  // Approach 2
+  
+}
 
 // (4) Wire-up the component with the state of the whole application
 export default connect(mapStateToProps, mapDispatchToProps)(LogIn)
