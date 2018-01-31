@@ -1,8 +1,4 @@
 ```jsx
-
-```
-
-```jsx
 // randomRGBColor.js
 const randomRGBColor = () => {
     const makeColor = () => parseInt(Math.random() * 255, 10)
