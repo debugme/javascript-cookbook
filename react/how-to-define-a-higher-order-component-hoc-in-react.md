@@ -30,6 +30,8 @@ const withColor = (Tag) => {
         }
     }
 }
+
+export default withColor
 ```
 
 ```jsx
@@ -38,6 +40,8 @@ import React from 'react'
 const HeaderOne = (props) => {
     return <h1 onClick={props.changeColor.bind(this)}>HeaderOne Goes In Here</h1>
 }
+
+export default HeaderOne
 ```
 
 ```jsx
