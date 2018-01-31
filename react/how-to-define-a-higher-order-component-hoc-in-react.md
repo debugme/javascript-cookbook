@@ -11,17 +11,17 @@ import React, { Component } from 'react'
 import randomColor from './randomColor'
 
 const withColor = (Tag) => {
-    return class extends Component {
-        changeColor(){
-            this.style = { 
-                color: randomColor(),
-                backgroundColor: randomColor()
-            }
-        }
-        render = () => {
-            const props = {...this.props, changeColor: this.changeColor }
-            return <Tag {..props} />
-        }
+  return class extends Component {
+    changeColor(){
+      this.style = { 
+        color: randomColor(),
+        backgroundColor: randomColor()
+      }
+     }
+     render = () => {
+       const props = {...this.props, changeColor: this.changeColor }
+       return <Tag {...props} />
+     }
     }
 }
 
