@@ -59,8 +59,7 @@ export default HeaderTwo
 ```jsx
 import React from 'react'
 
-// Do NOT define your HOCified components in the render() method!
-// https://reactjs.org/docs/higher-order-components.html#dont-use-hocs-inside-the-render-method
+// NOTE: https://reactjs.org/docs/higher-order-components.html#dont-use-hocs-inside-the-render-method
 const ColorHeaderOne = withColor(HeaderOne)
 const ColorHeaderTwo = withColor(HeaderTwo)
 
