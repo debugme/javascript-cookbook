@@ -10,14 +10,7 @@ class Headline extends Component {
 
 
 
-const withChameleon = (Tag) => {
-    return class extends Component {
-        onClick(event){
-            this.style = randomRGBColor()
-        }
-        render = () => <Tag {..this.props, onClick: this.onClick} />
-    }
-}
+
 ```
 
 ```jsx
@@ -33,7 +26,14 @@ export default randomRGBColor
 ```
 
 ```jsx
-
+const withChameleon = (Tag) => {
+    return class extends Component {
+        onClick(event){
+            this.style = randomRGBColor()
+        }
+        render = () => <Tag {..this.props, onClick: this.onClick} />
+    }
+}
 ```
 
 
