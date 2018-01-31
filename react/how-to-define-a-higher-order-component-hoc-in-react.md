@@ -45,7 +45,13 @@ export default HeaderOne
 ```jsx
 import React from 'react'
 
-const HeaderTwo = ({ changeColor }) => <h2 onClick={changeColor.bind(this)}>H2</h2>
+const HeaderTwo = (props) => {
+  const { changeColor } = props
+  const onClick = changeColor.bind(this)
+  return <h1 onClick={onClick}}>H2</h1>
+}
+
+
 
 export default HeaderTwo
 ```
