@@ -38,7 +38,7 @@ if (module.hot) {
   })
 }
 
-// source/server/server.jsx
+// (4) Update the root file in the server code
 import webpack from 'webpack'
 const server = express()
 const inDevelopmentMode = (process.env.NODE_ENV === 'development')
