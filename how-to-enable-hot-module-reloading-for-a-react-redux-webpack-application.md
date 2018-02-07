@@ -14,7 +14,7 @@ npm add webpack-hot-middleware
     new webpack.NamedModulesPlugin()
   ],
 
-// source/client/index.jsx
+// (3) Update the root file in the client code
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
