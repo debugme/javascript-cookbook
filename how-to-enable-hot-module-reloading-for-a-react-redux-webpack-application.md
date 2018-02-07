@@ -3,7 +3,7 @@
 npm add webpack-dev-middleware
 npm add webpack-hot-middleware
 
-// configs/webpack.config.dev.babel.js
+// (2) Update your webpack configuration
   entry: [
     'webpack-hot-middleware/client?reload=true',
     'babel-regenerator-runtime',
@@ -13,7 +13,7 @@ npm add webpack-hot-middleware
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin()
   ],
-  
+
 // source/client/index.jsx
 import React from 'react'
 import ReactDOM from 'react-dom'
@@ -50,7 +50,6 @@ if (inDevelopmentMode) {
   server.use(devMiddleware)
   server.use(hotMiddleware)
 }
-  
 ```
 
 
