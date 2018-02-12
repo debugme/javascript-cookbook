@@ -12,7 +12,9 @@ const onSuccess = (json) => {
   return console.log(`success: ${JSON.stringify(json)}`)
 }
 
-const onFailure = (error) => console.error(`error: ${error}`)
+const onFailure = (error) => {
+  return console.error(`error: ${error}`)
+}
 ```
 
 ```js
