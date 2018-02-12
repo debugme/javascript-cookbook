@@ -4,7 +4,7 @@ const url = 'https://swapi.co/api/people/5'
 const onValidate = (response) => {
   const { status, statusText } = response
   if (status < 200) throw Error(statusText)
-  if (status < 299) throw Error(statusText)
+  if (status > 299) throw Error(statusText)
   return response.json()
 }
 
