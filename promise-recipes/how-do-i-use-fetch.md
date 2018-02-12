@@ -13,7 +13,7 @@ const onSuccess = (json) => {
 }
 
 const onFailure = (error) => {
-  return console.error(`error: ${error}`)
+  console.error(`error: ${error}`)
 }
 ```
 
