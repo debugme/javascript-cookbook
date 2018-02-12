@@ -9,7 +9,7 @@ const onValidate = (response) => {
 }
 
 const onSuccess = (json) => {
-  return console.log(`success: ${JSON.stringify(json)}`)
+  console.log(`success: ${JSON.stringify(json)}`)
 }
 
 const onFailure = (error) => {
