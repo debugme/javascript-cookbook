@@ -54,6 +54,7 @@
 * [How can I use context to selectively pass data down a component hierarchy?](react/how-can-i-use-context-to-selectively-pass-data-down-a-component-hierarchy.md)
 * [How to define a Higher Order Component \(HOC\) in React](react/how-to-define-a-higher-order-component-hoc-in-react.md)
 * [What are the different lifecycle methods in React?](react/what-are-the-different-lifecycle-methods-in-react.md)
+* [HOCs vs. RenderProps - How To Share State](react/hocs-vs-renderprops-how-to-share-state.md)
 
 ## React Router Recipes
 
