@@ -27,6 +27,7 @@
 * [What does 'this' mean?](what-does-this-mean.md)
 * [How does inheritance work between objects?](how-does-inheritance-work-between-objects.md)
 * [How can I build a query string from an object?](how-can-i-build-a-query-string-from-an-object.md)
+* [How to instantiate a class using an object of that class?](how-to-instantiate-a-class-using-an-object-of-that-class.md)
 
 ## String Recipes
 
