@@ -8,6 +8,10 @@
 
 * [How can I add more metadata to my page to improve SEO?](seo-recipes/how-can-i-add-more-metadata-to-my-page-to-improve-seo.md)
 
+## Console Recipes
+
+* [How to colour text in the browser and server console](console-recipes/how-to-colour-text-in-the-browser-and-server-console.md)
+
 ## Array Recipes
 
 * [How can I filter out falsey values?](first-question.md)
