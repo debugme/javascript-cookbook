@@ -9,7 +9,7 @@ class Point {
 }
 
 const topLeft = new Point(0, 0)
-const bottomRight = new topLeft.constructor(10, 10) // STRANGER THINGS!
+const bottomRight = new topLeft.constructor(10, 10)
 console.log(`topLeft is ${topLeft} bottomRight is ${bottomRight}`)
 ```
 
