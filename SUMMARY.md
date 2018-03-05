@@ -39,6 +39,7 @@
 * [How can I simplify argument validation in a function?](how-can-i-simplify-argument-validation-in-a-function.md)
 * [How would I handle errors?](how-would-i-handle-errors.md)
 * [What types of functions can I rebind 'this' on? ](how-can-i-use-a-generator-function.md)
+* [How can I find out the length of a function's parameter list?](how-can-i-find-out-the-length-of-a-functions-parameter-list.md)
 
 ## Asynchronous Recipes
 
