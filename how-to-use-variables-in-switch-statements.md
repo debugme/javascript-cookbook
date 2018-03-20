@@ -16,7 +16,6 @@ const normaliseEndpoint = (endpoint) => {
 const normaliseEndpoint = (endpoint) => {
   const trim = endpoint.trim()
   const trimLowerCase = trim.toLowerCase()
-
   switch(true) {
     case trimLowerCase.startsWith('http://'):
       return trim.slice(5)
