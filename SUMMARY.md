@@ -28,7 +28,7 @@
 * [How does inheritance work between objects?](how-does-inheritance-work-between-objects.md)
 * [How can I build a query string from an object?](how-can-i-build-a-query-string-from-an-object.md)
 * [How to instantiate a class using an object of that class?](how-to-instantiate-a-class-using-an-object-of-that-class.md)
-* [How to use variables in switch statements](how-to-use-variables-in-switch-statements.md)
+* [Nested Ternaries vs Switch Statements](how-to-use-variables-in-switch-statements.md)
 
 ## String Recipes
 
