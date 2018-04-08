@@ -32,7 +32,7 @@ class AppTwo extends Component {
 
 // Approach3: Define the reference using `createRef()` (React 16.3 and above)
 class AppTwo extends Component {
-  message = React.createRef()
+  message = React.createRef(),
   blur = () => this.message.current.blur(),
   focus = () => this.message.current.focus(),  
   render = () => {
