@@ -1,5 +1,5 @@
 ```jsx
-// Define the reference using a string (Deprecated)
+// Approach1: Define the reference using a string (Deprecated)
 class AppOne extends Component {
   blur = () => this.refs.message.blur(),
   focus = () => this.refs.message.focus(),
@@ -14,7 +14,7 @@ class AppOne extends Component {
   }
 }
 
-// Define the reference using a function (React 16.2 and below)
+// Approach2: Define the reference using a function (React 16.2 and below)
 class AppTwo extends Component {
   blur = () => this.refs.message.blur(),
   focus = () => this.refs.message.focus(),  
@@ -30,7 +30,7 @@ class AppTwo extends Component {
   }  
 }
 
-// Define the reference using `createRef()` (React 16.3 and above)
+// Approach3: Define the reference using `createRef()` (React 16.3 and above)
 class AppTwo extends Component {
   message = React.createRef()
   blur = () => this.message.current.blur(),
@@ -45,9 +45,6 @@ class AppTwo extends Component {
     )
   }  
 }
-
-
-
 ```
 
 
