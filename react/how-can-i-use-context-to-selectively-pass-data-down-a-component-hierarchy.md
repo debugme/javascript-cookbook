@@ -85,11 +85,10 @@ const Family = () =>
     </div>
 
 const Person = () => 
-    <div>
-        <MyContext.Consumer>
-            {(context) => <p>{context.state.name}</p> }
-        </MyContext.Consumer>
-    </div>
+    <MyContext.Consumer>
+        {(context) => <p>{context.state.name}</p> }
+    </MyContext.Consumer>
+
 ```
 
 
