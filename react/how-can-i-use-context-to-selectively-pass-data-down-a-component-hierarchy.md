@@ -67,10 +67,17 @@ The `context` object passed into `Paragraph` will only contain `paragraphTitle` 
 
 import React, { createContext } from 'react'
 
+class MyContext = createContext()
+
+class MyProvider extends Component {
+    state = { name: 'henry' }
+    render () => <MyContext.Provider>{this.props.children}</MyContext.Provider>
+}
+
 const App = () =>
-    <MyContext.Provider>
+    <MyProvider>
         <Family />
-    </MyContext.Provider>
+    </MyProvider>
 
 const Family = () => 
     <div>
@@ -84,12 +91,6 @@ const Person = () =>
         </MyContext.Consumer>
     </div>
 ```
-
-
-
-
-
-
 
 
 
