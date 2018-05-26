@@ -1,4 +1,6 @@
 ```js
+// OLD APPROACH
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
@@ -59,4 +61,35 @@ The `context` object passed into `Chapter` will have `pageTitle` and `paragraphT
 The `context` object passed into `Page` will only contain \`pageTitle\` on it.
 
 The `context` object passed into `Paragraph` will only contain `paragraphTitle` on it.
+
+```jsx
+/// NEW APPROACH
+
+import React, { createContext } from 'react'
+
+const App = () =>
+    <MyContext.Provider>
+        <Family />
+    </MyContext.Provider>
+
+const Family = () => 
+    <div>
+        <Person />
+    </div>
+
+const Person = () => 
+    <div>
+        <MyContext.Consumer>
+            {(context) => <p>{context.state.name}</p> }
+        </MyContext.Consumer>
+    </div>
+```
+
+
+
+
+
+
+
+
 
